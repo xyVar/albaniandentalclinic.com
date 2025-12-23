@@ -1,0 +1,32 @@
+{
+  "hosting": {
+    "public": ".",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/facebook",
+        "destination": "/facebook.html"
+      },
+      {
+        "source": "/instagram",
+        "destination": "/instagram.html"
+      },
+      {
+        "source": "/sanmarco",
+        "destination": "/sanmarco.html"
+      },
+      {
+        "source": "/new-index-it",
+        "destination": "/new-index-it.html"
+      },
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
