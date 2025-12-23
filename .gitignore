@@ -16,6 +16,6 @@ __pycache__/
 *.bak
 
 # Environment files with secrets
-_config/env.*.local
+_config/env.*
 *.env.local
 .env
