@@ -66,7 +66,7 @@ WISE_CURRENCY=EUR
 # ============================================
 # KOLOR CRM
 # ============================================
-KOLOR_API_KEY=6fcfcf06-ba40-4d00-857e-2e684ebc09fc
+# KOLOR_API_KEY=<SET IN ENVIRONMENT - DO NOT COMMIT>
 KOLOR_API_ENDPOINT_PROD=https://crm.clinicadentalealbania.it/api/v1/leads/import
 KOLOR_API_ENDPOINT_LOCAL=http://127.0.0.1:5000/api/v1/leads/import
 KOLOR_CAMPAIGN_TYPE=fissa

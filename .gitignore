@@ -14,3 +14,8 @@ __pycache__/
 # Temporary files
 *.tmp
 *.bak
+
+# Environment files with secrets
+_config/env.*.local
+*.env.local
+.env
