@@ -1,0 +1,832 @@
+/* ============================================
+   CHI SIAMO PAGE STYLES
+   Clinica Dentale Albania
+   Only chi-siamo specific styles (header/footer inline in HTML)
+   ============================================ */
+
+/* ========== HERO SECTION ========== */
+.hero-chi-siamo {
+    background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+    color: white;
+    padding: 140px 20px 60px;
+    text-align: center;
+    min-height: 250px;
+}
+
+.hero-chi-siamo h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.hero-chi-siamo .subtitle {
+    font-size: 1.2rem;
+    opacity: 0.9;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+@media (min-width: 992px) {
+    .hero-chi-siamo {
+        padding: 180px 40px 80px;
+    }
+    .hero-chi-siamo h1 {
+        font-size: 3.5rem;
+    }
+    .hero-chi-siamo .subtitle {
+        font-size: 1.4rem;
+    }
+}
+
+/* ========== SUBSECTION NAVIGATION ========== */
+.subsection-nav {
+    background: white;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 80px;
+    z-index: 100;
+}
+
+.subsection-nav .nav-pills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.subsection-nav .nav-item {
+    list-style: none;
+}
+
+.subsection-nav .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 20px;
+    border-radius: 100px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    color: #4a5568;
+    background: #f7fafc;
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.subsection-nav .nav-link:hover {
+    background: #edf2f7;
+    color: #1a365d;
+}
+
+.subsection-nav .nav-link.active {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    color: white;
+    border-color: transparent;
+    box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3);
+}
+
+.subsection-nav .nav-link i {
+    font-size: 1rem;
+}
+
+/* ========== CONTENT AREA ========== */
+.content-area {
+    padding: 60px 0;
+    background: white;
+}
+
+.content-area .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.content-area .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.content-area .col-lg-7 {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.content-area .col-lg-5 {
+    width: 100%;
+    padding: 0 15px;
+}
+
+@media (min-width: 992px) {
+    .content-area .col-lg-7 {
+        width: 58.333%;
+    }
+    .content-area .col-lg-5 {
+        width: 41.667%;
+    }
+}
+
+#section-content {
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.content-area h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1a202c;
+    margin-bottom: 24px;
+}
+
+.content-area h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #3b82f6;
+    margin: 32px 0 16px;
+}
+
+.content-area h4 {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #1a202c;
+    margin: 20px 0 10px;
+}
+
+.content-area p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #4a5568;
+    margin-bottom: 16px;
+}
+
+.highlight-box {
+    background: #f7fafc;
+    border-left: 4px solid #3b82f6;
+    padding: 20px 24px;
+    border-radius: 0 12px 12px 0;
+    margin: 24px 0;
+}
+
+.highlight-box p {
+    margin: 0;
+    font-weight: 500;
+}
+
+/* ========== CAROUSEL ========== */
+.sticky-carousel {
+    position: sticky;
+    top: 180px;
+}
+
+.carousel-container {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    position: relative;
+    background: #f8f9fa;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    height: 350px;
+    overflow: hidden;
+}
+
+.carousel-item {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-item.active {
+    display: block;
+}
+
+.carousel-container .carousel-item img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    display: block;
+}
+
+.carousel-container .carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 12px;
+    padding: 12px 20px;
+    max-width: 90%;
+    text-align: center;
+}
+
+.carousel-container .carousel-caption p {
+    margin: 0;
+    color: white;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 40px;
+    height: 40px;
+    background: white;
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.9;
+}
+
+.carousel-control-prev {
+    left: 15px;
+}
+
+.carousel-control-next {
+    right: 15px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1) brightness(0);
+    width: 16px;
+    height: 16px;
+}
+
+/* ========== KEY POINTS GRID ========== */
+.key-points-section {
+    padding: 60px 0;
+    background: #f7fafc;
+}
+
+.key-points-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.key-points-section .row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.key-points-section .col-md-6 {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.key-points-section .col-lg-3 {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.key-points-section .col-lg-4 {
+    width: 100%;
+    padding: 0 15px;
+}
+
+@media (min-width: 768px) {
+    .key-points-section .col-md-6 {
+        width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .key-points-section .col-lg-3 {
+        width: 25%;
+    }
+    .key-points-section .col-lg-4 {
+        width: 33.333%;
+    }
+}
+
+.key-point-card {
+    background: white;
+    border-radius: 20px;
+    padding: 32px 24px;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+    border: 1px solid #e2e8f0;
+}
+
+.key-point-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+    border-color: transparent;
+}
+
+.key-point-card .icon-wrapper {
+    width: 70px;
+    height: 70px;
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.key-point-card .icon-wrapper i {
+    font-size: 1.8rem;
+    color: white;
+}
+
+.key-point-card h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 8px;
+}
+
+.key-point-card p {
+    font-size: 0.95rem;
+    color: #718096;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
+
+/* ========== PRICE TABLE ========== */
+.price-table-section {
+    padding: 60px 0;
+    background: white;
+}
+
+.price-table-section .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.price-table-section h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 24px;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.price-table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.price-table th,
+.price-table td {
+    padding: 16px;
+    text-align: center;
+}
+
+.price-table th {
+    background: #1a365d;
+    color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+}
+
+.price-table td {
+    background: white;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.price-table tr:hover td {
+    background: #f7fafc;
+}
+
+.price-albania {
+    color: #38a169;
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.price-italy {
+    color: #718096;
+    text-decoration: line-through;
+}
+
+.savings {
+    background: #c6f6d5;
+    color: #22543d;
+    padding: 4px 12px;
+    border-radius: 100px;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+/* ========== CTA SECTION ========== */
+.cta-section {
+    background: linear-gradient(135deg, #1a365d 0%, #2c5282 100%);
+    padding: 80px 20px;
+    color: white;
+}
+
+.cta-section .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.cta-section h2 {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 16px;
+}
+
+.cta-section p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-bottom: 32px;
+}
+
+.cta-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.cta-button-primary,
+.cta-button-secondary {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 16px 32px;
+    border-radius: 100px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    text-decoration: none;
+}
+
+.cta-button-primary {
+    background: white;
+    color: #1a365d;
+}
+
+.cta-button-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.cta-button-secondary {
+    background: #25D366;
+    color: white;
+}
+
+.cta-button-secondary:hover {
+    background: #128C7E;
+    transform: translateY(-2px);
+}
+
+.cta-trust-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.cta-trust-badges span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.cta-trust-badges i {
+    color: #38a169;
+}
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 991px) {
+    .subsection-nav {
+        top: 70px;
+    }
+
+    .sticky-carousel {
+        position: relative;
+        top: 0;
+        margin-top: 40px;
+    }
+
+    .carousel-container .carousel-item img {
+        height: 280px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-chi-siamo {
+        padding: 100px 16px 40px;
+    }
+
+    .hero-chi-siamo h1 {
+        font-size: 1.8rem;
+    }
+
+    .hero-chi-siamo .subtitle {
+        font-size: 1rem;
+    }
+
+    .subsection-nav .nav-link {
+        padding: 10px 14px;
+        font-size: 0.85rem;
+    }
+
+    .subsection-nav .nav-link span {
+        display: none;
+    }
+
+    .content-area {
+        padding: 40px 0;
+    }
+
+    .content-area h2 {
+        font-size: 1.6rem;
+    }
+
+    .cta-section h2 {
+        font-size: 1.8rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+        padding: 0 20px;
+    }
+
+    .cta-button-primary,
+    .cta-button-secondary {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .cta-trust-badges {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .key-point-card {
+        padding: 24px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .subsection-nav .nav-pills {
+        gap: 6px;
+    }
+
+    .subsection-nav .nav-link {
+        padding: 8px 12px;
+        font-size: 0.85rem;
+    }
+
+    .carousel-container .carousel-item img {
+        height: 220px;
+    }
+}
+
+/* ========== PRICING CARDS (Chi Siamo) ========== */
+.pricing-section-chisiamo {
+    margin-top: 40px;
+    padding-top: 40px;
+    border-top: 1px solid #e5e5ea;
+}
+
+.pricing-section-chisiamo .section-label {
+    color: #3b82f6;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.pricing-section-chisiamo h3 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    color: #1a202c;
+    margin-bottom: 16px;
+}
+
+.pricing-section-chisiamo .section-description {
+    color: #718096;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+.pricing-cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 24px;
+}
+
+@media (max-width: 992px) {
+    .pricing-cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .pricing-cards-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.pricing-card-chi {
+    background: #f8f9fa;
+    border-radius: 16px;
+    padding: 24px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.pricing-card-chi:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 40px rgba(59, 130, 246, 0.15);
+    border-color: #3b82f6;
+}
+
+.pricing-card-chi .pricing-card-image {
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 16px;
+}
+
+.pricing-card-chi .pricing-card-image img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.pricing-card-chi h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 8px;
+}
+
+.pricing-card-chi .price-from {
+    font-size: 0.95rem;
+    color: #718096;
+    margin-bottom: 16px;
+}
+
+.pricing-card-chi .btn-scopri {
+    background: transparent;
+    border: 2px solid #3b82f6;
+    color: #3b82f6;
+    padding: 10px 24px;
+    border-radius: 100px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pricing-card-chi .btn-scopri:hover {
+    background: #3b82f6;
+    color: white;
+}
+
+/* ========== PRODUCT MODAL ========== */
+/* ALL product modal styles are in chi-siamo.html inline styles to match index.html exactly */
+
+/* ========== PRICING CARDS IN CAROUSEL ========== */
+/* When carousel is in pricing mode, allow auto height and visible overflow */
+.carousel-container.pricing-mode {
+    overflow: visible;
+}
+
+.carousel-inner.pricing-mode {
+    height: auto !important;
+    min-height: auto;
+    overflow: visible !important;
+}
+
+.pricing-cards-carousel {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 20px;
+}
+
+.pricing-card-item {
+    background: #fff;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.pricing-card-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(59, 130, 246, 0.15);
+    border-color: #3b82f6;
+}
+
+.pricing-card-item .card-image {
+    height: 120px;
+    background: linear-gradient(180deg, #e8f4fd 0%, #f8f9fa 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px;
+}
+
+.pricing-card-item .card-image img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.pricing-card-item .card-info {
+    padding: 16px;
+}
+
+.pricing-card-item h4 {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 4px;
+}
+
+.pricing-card-item .subtitle {
+    font-size: 0.8rem;
+    color: #718096;
+    margin-bottom: 12px;
+}
+
+.pricing-card-item .price-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.pricing-card-item .price-label {
+    font-size: 0.65rem;
+    color: #718096;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.pricing-card-item .price-value {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ef4444;
+}
+
+.pricing-card-item .btn-vedi-opzioni {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #3b82f6;
+    font-size: 0.85rem;
+    font-weight: 600;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+
+.pricing-card-item .btn-vedi-opzioni:hover {
+    text-decoration: underline;
+}
+
+/* Text primary color */
+.text-primary {
+    color: #3b82f6;
+}

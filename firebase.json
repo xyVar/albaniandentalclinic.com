@@ -4,7 +4,28 @@
     "ignore": [
       "firebase.json",
       "**/.*",
-      "**/node_modules/**"
+      "**/node_modules/**",
+      "_docs/**",
+      "_config/**"
+    ],
+    "headers": [
+      {
+        "source": "**",
+        "headers": [
+          {
+            "key": "Access-Control-Allow-Origin",
+            "value": "*"
+          },
+          {
+            "key": "Cross-Origin-Opener-Policy",
+            "value": "same-origin-allow-popups"
+          },
+          {
+            "key": "Cross-Origin-Embedder-Policy",
+            "value": "unsafe-none"
+          }
+        ]
+      }
     ],
     "rewrites": [
       {
@@ -16,12 +37,16 @@
         "destination": "/instagram.html"
       },
       {
-        "source": "/sanmarco",
-        "destination": "/sanmarco.html"
+        "source": "/chi-siamo",
+        "destination": "/chi-siamo.html"
       },
       {
-        "source": "/new-index-it",
-        "destination": "/new-index-it.html"
+        "source": "/about-us",
+        "destination": "/chi-siamo.html"
+      },
+      {
+        "source": "/terms",
+        "destination": "/terms-conditions.html"
       },
       {
         "source": "**",

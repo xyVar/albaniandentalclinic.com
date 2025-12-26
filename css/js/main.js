@@ -105,7 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
         form.reportValidity();
         return false;
       }
-      (window.dataLayer = window.dataLayer || []).push({ event: 'lead_submit' }); // per GA4/Ads via GTM
+      (window.dataLayer = window.dataLayer || []).push({ event: 'generate_lead' }); // Google's standard lead event
     });
   }
 });
