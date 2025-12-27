@@ -16,6 +16,21 @@ __pycache__/
 *.bak
 
 # Environment files with secrets
-_config/env.*
+_config/
 *.env.local
 .env
+
+# Internal folders (not for repo)
+_docs/
+
+# Duplicate image folders
+images/instagram.images/
+images/instagram.videos/
+images/landing.images.smarco/
+images/landing/
+images/clinic/
+images/treatments/
+images/tour/
+
+# Documentation
+TRACKING_STATUS.md
