@@ -20,8 +20,9 @@ _config/
 *.env.local
 .env
 
-# Internal folders (not for repo)
-_docs/
+# Internal folders (not for repo) - except MULTILINGUAL_SITE_PLAN.md
+_docs/*
+!_docs/MULTILINGUAL_SITE_PLAN.md
 
 # Duplicate image folders
 images/instagram.images/
