@@ -946,39 +946,37 @@ function trackProductModalOpen(category) {
 }
 
 // ========== PHONE CLICK TRACKING ==========
-// Synced with index.html tracking format
+// GA4 event only - import to Google Ads from GA4
 function trackPhoneClick() {
     if (typeof gtag === 'function') {
-        gtag('event', 'conversion', {
-            'send_to': 'AW-17825998174/PhoneCallConversion',
+        gtag('event', 'click_phone', {
+            'event_category': 'Contact',
+            'event_label': 'Phone Click',
+            'phone_number': '+37254450188',
             'value': 0.5,
             'currency': 'EUR'
-        });
-        gtag('event', 'click_phone', {
-            'phone_number': '+37254450188'
         });
     }
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({ event: 'click_phone' });
-    console.log('✅ Phone click tracked');
+    console.log('✅ GA4 click_phone tracked');
 }
 
 // ========== WHATSAPP CLICK TRACKING ==========
-// Synced with index.html tracking format
+// GA4 event only - import to Google Ads from GA4
 function trackWhatsAppClick() {
     if (typeof gtag === 'function') {
-        gtag('event', 'conversion', {
-            'send_to': 'AW-17825998174/WhatsAppClick',
+        gtag('event', 'click_whatsapp', {
+            'event_category': 'Contact',
+            'event_label': 'WhatsApp Click',
+            'phone_number': '+37254450188',
             'value': 0.5,
             'currency': 'EUR'
-        });
-        gtag('event', 'click_whatsapp', {
-            'whatsapp_number': '37254450188'
         });
     }
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({ event: 'click_whatsapp' });
-    console.log('✅ WhatsApp click tracked');
+    console.log('✅ GA4 click_whatsapp tracked');
 }
 
 // ========== CTA CLICK TRACKING ==========

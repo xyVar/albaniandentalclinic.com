@@ -25,13 +25,21 @@
     });
     </script>
 
-    <!-- Google tag (gtag.js) - Using Google Tag ID -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GT-WRDQC73Q"></script>
+    <!-- Google tag (gtag.js) - GA4 + Google Ads -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-74JG2X3NB8"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'GT-WRDQC73Q');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-74JG2X3NB8', {
+        'send_page_view': true,
+        'allow_google_signals': true,
+        'allow_ad_personalization_signals': true,
+        'cookie_flags': 'SameSite=None;Secure'
+    });
+    gtag('config', 'AW-17825998174', {
+        'allow_enhanced_conversions': true
+    });
     </script>
 
     <!-- Meta Pixel Code -->
@@ -8265,35 +8273,33 @@ window.addEventListener('scroll', () => {
     }
 })();
 
-// Phone Click Tracking
+// Phone Click Tracking - GA4 event only (import to Google Ads from GA4)
 function trackPhoneClick() {
     if (typeof gtag === 'function') {
-        gtag('event', 'conversion', {
-            'send_to': 'AW-17825998174/PhoneCallConversion',
+        gtag('event', 'click_phone', {
+            'event_category': 'Contact',
+            'event_label': 'Phone Click',
+            'phone_number': '+37254450188',
             'value': 0.5,
             'currency': 'EUR'
         });
-        gtag('event', 'click_phone', {
-            'phone_number': '+37254450188'
-        });
-        console.log('✅ Phone click tracked');
+        console.log('✅ GA4 click_phone tracked');
     }
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({ event: 'click_phone' });
 }
 
-// WhatsApp Click Tracking
+// WhatsApp Click Tracking - GA4 event only (import to Google Ads from GA4)
 function trackWhatsAppClick() {
     if (typeof gtag === 'function') {
-        gtag('event', 'conversion', {
-            'send_to': 'AW-17825998174/WhatsAppClick',
+        gtag('event', 'click_whatsapp', {
+            'event_category': 'Contact',
+            'event_label': 'WhatsApp Click',
+            'phone_number': '+37254450188',
             'value': 0.5,
             'currency': 'EUR'
         });
-        gtag('event', 'click_whatsapp', {
-            'phone_number': '+37254450188'
-        });
-        console.log('✅ WhatsApp click tracked');
+        console.log('✅ GA4 click_whatsapp tracked');
     }
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({ event: 'click_whatsapp' });
