@@ -47,11 +47,9 @@
       {
         "source": "/terms",
         "destination": "/terms-conditions.html"
-      },
-      {
-        "source": "**",
-        "destination": "/index.html"
       }
-    ]
+    ],
+    "cleanUrls": true,
+    "trailingSlash": false
   }
 }
