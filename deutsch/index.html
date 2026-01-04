@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="de">
 <head>
     <meta charset="UTF-8">
@@ -12,6 +12,33 @@
     <meta name="facebook-domain-verification" content="ryldelrcctqjjaxntgw0e8b5afd218" />
 
     <title>Albanische Zahnklinik | Netzwerk Zertifizierter Kliniken | 75% Sparen</title>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://albaniandentalclinic.com/deutsch/" />
+
+    <!-- Hreflang Tags for Multilingual SEO -->
+    <link rel="alternate" hreflang="en" href="https://albaniandentalclinic.com/" />
+    <link rel="alternate" hreflang="de" href="https://albaniandentalclinic.com/deutsch/" />
+    <link rel="alternate" hreflang="fr" href="https://albaniandentalclinic.com/french/" />
+    <link rel="alternate" hreflang="es" href="https://albaniandentalclinic.com/espagnol/" />
+    <link rel="alternate" hreflang="nl" href="https://albaniandentalclinic.com/dutch/" />
+    <link rel="alternate" hreflang="pl" href="https://albaniandentalclinic.com/poland/" />
+    <link rel="alternate" hreflang="x-default" href="https://albaniandentalclinic.com/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://albaniandentalclinic.com/deutsch/" />
+    <meta property="og:title" content="Albanische Zahnklinik | 75% Sparen bei Zahnimplantaten" />
+    <meta property="og:description" content="Netzwerk zertifizierter Zahnkliniken in Albanien. Sparen Sie bis zu 75% bei Zahnimplantaten und Behandlungen. 10+ Jahre Erfahrung, 4.8 Google Sterne." />
+    <meta property="og:image" content="https://albaniandentalclinic.com/images/landing/clinica-san-marco.jpg" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:site_name" content="Albanian Dental Clinic" />
+
+    <!-- X (Twitter) Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Albanische Zahnklinik | 75% Sparen bei Zahnimplantaten" />
+    <meta name="twitter:description" content="Netzwerk zertifizierter Zahnkliniken in Albanien. Sparen Sie bis zu 75% bei Zahnimplantaten." />
+    <meta name="twitter:image" content="https://albaniandentalclinic.com/images/landing/clinica-san-marco.jpg" />
 
     <!-- Consent Mode v2 - Initialize FIRST -->
     <script>
@@ -1515,16 +1542,18 @@
 
         .pricing-card-image {
             width: 100%;
-            height: 120px;
-            object-fit: contain;
+            height: 160px;
+            object-fit: cover;
             background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-            padding: 16px;
+            padding: 0;
+            border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+            overflow: hidden;
         }
 
         @media (min-width: 768px) {
             .pricing-card-image {
-                height: 160px;
-                padding: 20px;
+                height: 180px;
+                padding: 0;
             }
 
             .pricing-info h3 {
@@ -5435,6 +5464,62 @@
             }
         }
     </style>
+
+    <!-- JSON-LD Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Dentist",
+        "name": "Albanian Dental Clinic",
+        "alternateName": "ADC - Netzwerk zertifizierter Zahnkliniken",
+        "description": "Netzwerk zertifizierter Zahnkliniken in Albanien. Premium Zahnimplantate und Behandlungen zu 75% günstigeren Preisen als in Westeuropa.",
+        "url": "https://albaniandentalclinic.com/deutsch/",
+        "logo": "https://albaniandentalclinic.com/images/landing/sanmarco-logo-icon.png",
+        "image": "https://albaniandentalclinic.com/images/landing/clinica-san-marco.jpg",
+        "telephone": "+355-69-XXX-XXXX",
+        "email": "info@albaniandentalclinic.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Tirana",
+            "addressLocality": "Tirana",
+            "addressCountry": "AL"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "41.3275",
+            "longitude": "19.8187"
+        },
+        "priceRange": "€€",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "500",
+            "bestRating": "5"
+        },
+        "medicalSpecialty": ["Zahnmedizin", "Oralchirurgie", "Implantologie"],
+        "availableService": [
+            {
+                "@type": "MedicalProcedure",
+                "name": "Zahnimplantat",
+                "description": "Premium Zahnimplantate mit lebenslanger Garantie"
+            },
+            {
+                "@type": "MedicalProcedure",
+                "name": "Zirkonkrone",
+                "description": "Hochwertige Zirkon-Zahnkronen"
+            },
+            {
+                "@type": "MedicalProcedure",
+                "name": "Vollbogen-Restauration",
+                "description": "Komplette Zahnrehabilitierung mit Implantaten"
+            }
+        ],
+        "sameAs": [
+            "https://www.facebook.com/albaniandentalclinic",
+            "https://www.instagram.com/albaniandentalclinic"
+        ]
+    }
+    </script>
 </head>
 <body>
 
@@ -5629,33 +5714,33 @@
     <div class="container">
         <div class="hero-content">
             <h1>Jetzt buchen</h1>
-            <p class="hero-subtitle">The lowest prices in Albania. Certified European quality.</p>
+            <p class="hero-subtitle">Die niedrigsten Preise in Albanien. Zertifizierte europäische Qualität.</p>
 
             <!-- Price Cards -->
             <div class="hero-price-cards">
                 <!-- Impianto Card -->
                 <div class="hero-price-card" onclick="openPopup()">
                     <div class="hero-price-icon"><i class="fas fa-tooth"></i></div>
-                    <div class="hero-price-title">Dental Implant</div>
+                    <div class="hero-price-title">Zahnimplantat</div>
                     <div class="hero-price-main">€320</div>
-                    <div class="hero-price-detail">Implant + Abutment included</div>
-                    <div class="hero-price-comparison">Others: €430</div>
+                    <div class="hero-price-detail">Implantat + Abutment inklusive</div>
+                    <div class="hero-price-comparison">Andere: €430</div>
                     <div class="hero-price-cta hero-price-cta-call">
                         <i class="fas fa-phone-alt"></i>
-                        <span>Request Call</span>
+                        <span>Rückruf anfordern</span>
                     </div>
                 </div>
 
                 <!-- Corona Card -->
                 <div class="hero-price-card" onclick="openAngebotSimulator()">
                     <div class="hero-price-icon"><i class="fas fa-gem"></i></div>
-                    <div class="hero-price-title">Zirconia Crown</div>
+                    <div class="hero-price-title">Zirkonkrone</div>
                     <div class="hero-price-main">€160</div>
-                    <div class="hero-price-detail">Premium zirconia included</div>
-                    <div class="hero-price-comparison">Others: €200+</div>
+                    <div class="hero-price-detail">Premium-Zirkon inklusive</div>
+                    <div class="hero-price-comparison">Andere: €200+</div>
                     <div class="hero-price-cta">
                         <i class="fas fa-calculator"></i>
-                        <span>Calculate Now</span>
+                        <span>Jetzt berechnen</span>
                     </div>
                 </div>
             </div>
@@ -5666,7 +5751,7 @@
                     <div class="hero-brands-icon">
                         <i class="fas fa-medal"></i>
                     </div>
-                    <div class="hero-brands-label">Premium Certified Implants</div>
+                    <div class="hero-brands-label">Premium Zertifizierte Implantate</div>
                 </div>
                 <div class="hero-brands-logos">
                     <img src="../images/strauman.grou[p.brand.JPG" alt="Straumann" class="hero-brand-logo" title="Straumann - Switzerland">
@@ -5676,7 +5761,7 @@
                     <img src="../images/toplan.ostem.brand.JPG" alt="Toplan Osstem" class="hero-brand-logo" title="Toplan / Osstem">
                 </div>
                 <div class="hero-brands-cta">
-                    <span>Discover All Implants</span>
+                    <span>Alle Implantate entdecken</span>
                     <i class="fas fa-arrow-right"></i>
                 </div>
             </div>
@@ -5689,11 +5774,11 @@
                 </div>
                 <div class="hero-trust-item">
                     <i class="fas fa-users"></i>
-                    <span>2,847 Patienten</span>
+                    <span>2.847 Patienten</span>
                 </div>
                 <div class="hero-trust-item">
                     <i class="fas fa-certificate"></i>
-                    <span>Lifetime Garantie</span>
+                    <span>Lebenslange Garantie</span>
                 </div>
             </div>
         </div>
@@ -5707,44 +5792,44 @@
                         <img src="../images/arcatacompleta.PNG" alt="Full-Arch Rehabilitation on Implants">
                     </div>
                     <div class="hero-carousel-slide">
-                        <img src="../images/arcata completa 2.PNG" alt="All-on-4 Upper Arch">
+                        <img src="../images/arcata completa 2.PNG" alt="All-on-4 Upper Arch" loading="lazy">
                     </div>
                     <div class="hero-carousel-slide">
-                        <img src="../images/arcata completa3.PNG" alt="All-on-6 Lower Arch">
+                        <img src="../images/arcata completa3.PNG" alt="All-on-6 Lower Arch" loading="lazy">
                     </div>
                     <!-- Clinic Interior Images -->
                     <div class="hero-carousel-slide">
-                        <img src="../images/sanmarco9.PNG" alt="San Marco Dental Clinic - Main Hall">
+                        <img src="../images/sanmarco9.PNG" alt="San Marco Dental Clinic - Main Hall" loading="lazy">
                     </div>
                     <div class="hero-carousel-slide">
-                        <img src="../images/sanamrco10.PNG" alt="San Marco Dental Clinic - Sterile Corridors">
+                        <img src="../images/sanamrco10.PNG" alt="San Marco Dental Clinic - Sterile Corridors" loading="lazy">
                     </div>
                     <div class="hero-carousel-slide">
-                        <img src="../images/sanamrco8..PNG" alt="San Marco Dental Clinic - Reception">
+                        <img src="../images/sanamrco8..PNG" alt="San Marco Dental Clinic - Reception" loading="lazy">
                     </div>
                     <div class="hero-carousel-slide">
-                        <img src="../images/sanmarco12.PNG" alt="San Marco Dental Clinic - Consultation">
+                        <img src="../images/sanmarco12.PNG" alt="San Marco Dental Clinic - Consultation" loading="lazy">
                     </div>
                     <div class="hero-carousel-slide">
-                        <img src="../images/sanmarco3.PNG" alt="San Marco Dental Clinic - Welcome Area">
+                        <img src="../images/sanmarco3.PNG" alt="San Marco Dental Clinic - Welcome Area" loading="lazy">
                     </div>
                     <div class="hero-carousel-slide">
-                        <img src="../images/sanamrco.5.PNG" alt="San Marco Dental Clinic - Dental Unit">
+                        <img src="../images/sanamrco.5.PNG" alt="San Marco Dental Clinic - Dental Unit" loading="lazy">
                     </div>
                     <div class="hero-carousel-slide">
-                        <img src="../images/sanmarcodental2..PNG" alt="San Marco Dental Clinic - Design Atrium">
+                        <img src="../images/sanmarcodental2..PNG" alt="San Marco Dental Clinic - Design Atrium" loading="lazy">
                     </div>
                     <div class="hero-carousel-slide">
-                        <img src="../images/sanmarco6.PNG" alt="San Marco Dental Clinic - Diagnostics">
+                        <img src="../images/sanmarco6.PNG" alt="San Marco Dental Clinic - Diagnostics" loading="lazy">
                     </div>
                     <div class="hero-carousel-slide">
-                        <img src="../images/sanamarco7.PNG" alt="San Marco Dental Clinic - Laboratory">
+                        <img src="../images/sanamarco7.PNG" alt="San Marco Dental Clinic - Laboratory" loading="lazy">
                     </div>
                     <div class="hero-carousel-slide">
-                        <img src="../images/sanmarcodental.1.PNG" alt="San Marco Dental Clinic - Microscope">
+                        <img src="../images/sanmarcodental.1.PNG" alt="San Marco Dental Clinic - Microscope" loading="lazy">
                     </div>
                     <div class="hero-carousel-slide">
-                        <img src="../images/sanmarco5.PNG" alt="San Marco Dental Clinic - Operating Room">
+                        <img src="../images/sanmarco5.PNG" alt="San Marco Dental Clinic - Operating Room" loading="lazy">
                     </div>
                 </div>
                 <div class="hero-carousel-dots" id="heroCarouselDots">
@@ -5767,10 +5852,10 @@
             <div class="hero-clinic-overlay">
                 <div class="hero-clinic-badge">
                     <i class="fas fa-check-circle"></i>
-                    Verified Partner
+                    Verifizierter Partner
                 </div>
                 <h3 class="hero-clinic-name">San Marco Dental Clinic</h3>
-                <p class="hero-clinic-cta"><i class="fas fa-images"></i> Discover the clinic</p>
+                <p class="hero-clinic-cta"><i class="fas fa-images"></i> Klinik entdecken</p>
             </div>
         </div>
     </div>
@@ -5838,29 +5923,29 @@
 <section class="treatment-plan-section" id="piano-trattamento">
     <div class="container">
         <div class="treatment-plan-header">
-            <h2>ALL ON 4 Behandlung Plan</h2>
-            <p>The complete journey to your new smile in two sessions</p>
+            <h2>ALL ON 4 Behandlungsplan</h2>
+            <p>Der komplette Weg zu Ihrem neuen Lächeln in zwei Sitzungen</p>
         </div>
 
         <div class="treatment-plan-grid">
             <!-- Prima Seduta - Chirurgia -->
             <div class="treatment-card">
                 <div class="treatment-card-header dark">
-                    <p class="seduta-label">First Session:</p>
-                    <h3>ALL ON 4 - Surgery</h3>
+                    <p class="seduta-label">Erste Sitzung:</p>
+                    <h3>ALL ON 4 - Chirurgie</h3>
                 </div>
                 <div class="treatment-card-price">
-                    <p class="price-description">Surgical procedure included</p>
+                    <p class="price-description">Chirurgischer Eingriff inklusive</p>
                     <p class="price-value">1.550 &euro;</p>
-                    <p class="price-unit">per arch</p>
+                    <p class="price-unit">pro Kiefer</p>
                 </div>
                 <div class="treatment-card-features">
                     <ul>
                         <li><i class="fas fa-check"></i> 4 Zahnimplantate</li>
-                        <li><i class="fas fa-check"></i> Extraction (if needed)</li>
-                        <li><i class="fas fa-check"></i> Temporary prosthesis</li>
-                        <li><i class="fas fa-check"></i> Surgical procedure</li>
-                        <li><i class="fas fa-check"></i> Sedation</li>
+                        <li><i class="fas fa-check"></i> Extraktion (falls erforderlich)</li>
+                        <li><i class="fas fa-check"></i> Provisorische Prothese</li>
+                        <li><i class="fas fa-check"></i> Chirurgischer Eingriff</li>
+                        <li><i class="fas fa-check"></i> Sedierung</li>
                     </ul>
                 </div>
                 <div class="treatment-card-cta">
@@ -5873,21 +5958,21 @@
             <!-- Seconda Seduta - Chirurgia -->
             <div class="treatment-card">
                 <div class="treatment-card-header light">
-                    <p class="seduta-label">Second Session:</p>
-                    <h3>ALL ON 4 - Surgery</h3>
+                    <p class="seduta-label">Zweite Sitzung:</p>
+                    <h3>ALL ON 4 - Chirurgie</h3>
                 </div>
                 <div class="treatment-card-price">
-                    <p class="price-description">Surgical procedure included</p>
+                    <p class="price-description">Chirurgischer Eingriff inklusive</p>
                     <p class="price-value">1.500 &euro;</p>
-                    <p class="price-unit">per arch</p>
+                    <p class="price-unit">pro Kiefer</p>
                 </div>
                 <div class="treatment-card-features">
                     <ul>
                         <li><i class="fas fa-check"></i> 4 Zahnimplantate</li>
-                        <li><i class="fas fa-check"></i> Extraction (if needed)</li>
-                        <li><i class="fas fa-check"></i> Temporary prosthesis</li>
-                        <li><i class="fas fa-check"></i> Surgical procedure</li>
-                        <li><i class="fas fa-check"></i> Sedation</li>
+                        <li><i class="fas fa-check"></i> Extraktion (falls erforderlich)</li>
+                        <li><i class="fas fa-check"></i> Provisorische Prothese</li>
+                        <li><i class="fas fa-check"></i> Chirurgischer Eingriff</li>
+                        <li><i class="fas fa-check"></i> Sedierung</li>
                     </ul>
                 </div>
                 <div class="treatment-card-cta">
@@ -5900,21 +5985,21 @@
             <!-- Seconda Seduta - Protesia -->
             <div class="treatment-card featured">
                 <div class="treatment-card-header light">
-                    <p class="seduta-label">Second Session:</p>
-                    <h3>ALL ON 4 - Prosthetics</h3>
+                    <p class="seduta-label">Zweite Sitzung:</p>
+                    <h3>ALL ON 4 - Prothetik</h3>
                 </div>
                 <div class="treatment-card-price">
-                    <p class="price-description">Zirconia arch</p>
+                    <p class="price-description">Zirkon-Bogen</p>
                     <p class="price-value">2.220 &euro;</p>
-                    <p class="price-unit">per arch</p>
+                    <p class="price-unit">pro Kiefer</p>
                 </div>
                 <div class="treatment-card-features">
                     <ul>
-                        <li><i class="fas fa-check"></i> Longevity: 10-15 years</li>
-                        <li><i class="fas fa-check"></i> Stain resistance: High</li>
-                        <li><i class="fas fa-check"></i> Aesthetics: Very high</li>
-                        <li><i class="fas fa-check"></i> Biocompatibility: High</li>
-                        <li><i class="fas fa-check"></i> Translucency: High</li>
+                        <li><i class="fas fa-check"></i> Haltbarkeit: 10-15 Jahre</li>
+                        <li><i class="fas fa-check"></i> Fleckenbeständigkeit: Hoch</li>
+                        <li><i class="fas fa-check"></i> Ästhetik: Sehr hoch</li>
+                        <li><i class="fas fa-check"></i> Biokompatibilität: Hoch</li>
+                        <li><i class="fas fa-check"></i> Transluzenz: Hoch</li>
                     </ul>
                 </div>
                 <div class="treatment-card-cta">
@@ -5932,57 +6017,57 @@
     <!-- 4-Schritt Quick Overview -->
     <div class="cf-overview">
         <div class="cf-overview-container">
-            <h2 class="cf-overview-title">Your Journey in <span>4 Simple Schritts</span></h2>
-            <p class="cf-overview-subtitle">From first contact to your new smile, we guide you every step of the way</p>
+            <h2 class="cf-overview-title">Ihre Reise in <span>4 einfachen Schritten</span></h2>
+            <p class="cf-overview-subtitle">Vom ersten Kontakt bis zu Ihrem neuen Lächeln begleiten wir Sie auf jedem Schritt</p>
             <div class="cf-overview-steps">
                 <div class="cf-overview-step cf-overview-step-clickable cf-overview-step-highlight" onclick="openAngebotSimulator()">
                     <div class="cf-overview-icon cf-overview-icon-large">
-                        <img src="../images/landing.images.smarco/dentista-paziente.jpg" alt="Calcola Angebot">
+                        <img src="../images/landing.images.smarco/dentista-paziente.jpg" alt="Calcola Angebot" loading="lazy">
                     </div>
                     <div class="cf-overview-number">01</div>
-                    <h3>Calculate Your Angebot</h3>
-                    <p>Find out how much you can save! Calculate costs in real time</p>
+                    <h3>Ihr Angebot berechnen</h3>
+                    <p>Erfahren Sie, wie viel Sie sparen können! Kosten in Echtzeit berechnen</p>
                     <button class="cf-overview-btn" onclick="event.stopPropagation(); openAngebotSimulator()">
-                        <i class="fas fa-calculator"></i> Calculate Now
+                        <i class="fas fa-calculator"></i> Jetzt berechnen
                     </button>
                 </div>
                 <div class="cf-overview-step cf-overview-step-clickable cf-overview-step-flight" onclick="openFlightSearch()">
                     <div class="cf-overview-icon cf-overview-icon-large">
-                        <img src="../images/tour/Tirana_28.jpg" alt="Voli per Tirana">
+                        <img src="../images/tour/Tirana_28.jpg" alt="Voli per Tirana" loading="lazy">
                     </div>
                     <div class="cf-overview-number">02</div>
-                    <h3>Search Flights to Tirana</h3>
-                    <p>Find the best flights from Europe! Real-time prices</p>
+                    <h3>Flüge nach Tirana suchen</h3>
+                    <p>Finden Sie die besten Flüge aus Europa! Preise in Echtzeit</p>
                     <button class="cf-overview-btn cf-overview-btn-flight" onclick="event.stopPropagation(); openFlightSearch()">
-                        <i class="fas fa-plane"></i> Search Flights
+                        <i class="fas fa-plane"></i> Flüge suchen
                     </button>
                 </div>
                 <div class="cf-overview-step cf-overview-step-clickable cf-overview-step-booking" onclick="openBookingModal()">
                     <div class="cf-step-badge cf-badge-booking">
-                        <i class="fas fa-credit-card"></i> BOOK NOW
+                        <i class="fas fa-credit-card"></i> JETZT BUCHEN
                     </div>
                     <div class="cf-overview-icon cf-overview-icon-large">
-                        <img src="../images/landing.images.smarco/dental-clinic.jpg" alt="Book Your Behandlung">
+                        <img src="../images/landing.images.smarco/dental-clinic.jpg" alt="Book Your Behandlung" loading="lazy">
                     </div>
                     <div class="cf-overview-number">03</div>
-                    <h3>Book Your Behandlung</h3>
-                    <p>Confirm with the coordination service and book your date</p>
+                    <h3>Ihre Behandlung buchen</h3>
+                    <p>Bestätigen Sie beim Koordinationsservice und buchen Sie Ihren Termin</p>
                     <button class="cf-overview-btn cf-overview-btn-booking" onclick="event.stopPropagation(); openBookingModal()">
                         <i class="fas fa-calendar-check"></i> Jetzt buchen
                     </button>
                 </div>
                 <div class="cf-overview-step cf-overview-step-clickable cf-overview-step-tirana" onclick="openTiranaModal()">
                     <div class="cf-step-badge cf-badge-tirana">
-                        <i class="fas fa-star"></i> DISCOVER TIRANA
+                        <i class="fas fa-star"></i> TIRANA ENTDECKEN
                     </div>
                     <div class="cf-overview-icon cf-overview-icon-large">
-                        <img src="../images/tour/piramide-tirana.jpg" alt="Tirana Experience - Piramide di Tirana">
+                        <img src="../images/tour/piramide-tirana.jpg" alt="Tirana Experience - Piramide di Tirana" loading="lazy">
                     </div>
                     <div class="cf-overview-number">04</div>
                     <h3>Ihre Erfahrung</h3>
-                    <p>24/7 support, places to visit and personalized assistance</p>
+                    <p>24/7 Support, Sehenswürdigkeiten und persönliche Betreuung</p>
                     <button class="cf-overview-btn cf-overview-btn-tirana" onclick="event.stopPropagation(); openTiranaModal()">
-                        <i class="fas fa-calculator"></i> Plan Your Trip
+                        <i class="fas fa-calculator"></i> Ihre Reise planen
                     </button>
                 </div>
             </div>
@@ -5995,15 +6080,15 @@
             <div class="cf-hero-content">
                 <div class="cf-hero-badge">
                     <i class="fas fa-plane"></i>
-                    Dental Tourism in Albania
+                    Zahntourismus in Albanien
                 </div>
-                <h1>How Does <span>Dental Tourism</span> in Albania Work?</h1>
-                <p class="cf-hero-subtitle">Discover how thousands of Patienten have transformed their smile saving up to 75%. A simple, safe and fully assisted process.</p>
+                <h1>Wie funktioniert <span>Zahntourismus</span> in Albanien?</h1>
+                <p class="cf-hero-subtitle">Entdecken Sie, wie Tausende von Patienten ihr Lächeln verwandelt und bis zu 75% gespart haben. Ein einfacher, sicherer und vollständig begleiteter Prozess.</p>
             </div>
 
             <div class="cf-video-card">
                 <div class="cf-video-container">
-                    <video id="cfHeroVideo" poster="images/sanmarco9.PNG" preload="metadata" data-start-time="11">
+                    <video id="cfHeroVideo" poster="../images/sanmarco9.PNG" preload="metadata" data-start-time="11">
                         <source src="../images/instagram.videos/eng_video_1.mp4#t=11" type="video/mp4">
                     </video>
                     <div class="cf-video-play-btn" onclick="toggleVideoPlay('cfHeroVideo', this)">
@@ -6030,18 +6115,18 @@
                     <img src="../images/instagram.images/ig_image_6_1_20251125.jpg" alt="Request free quote" loading="lazy">
                 </div>
                 <div class="cf-step-text">
-                    <div class="cf-step-number"><span>01</span> First Schritt</div>
-                    <h2>Request Your <span>Kostenloses Angebot</span> from Europe</h2>
-                    <p class="cf-step-description">Everything starts with a simple request. Send us your dental X-ray and we will provide you with a detailed quote within 24 hours, with no obligation.</p>
+                    <div class="cf-step-number"><span>01</span> Erster Schritt</div>
+                    <h2>Fordern Sie Ihr <span>kostenloses Angebot</span> aus Europa an</h2>
+                    <p class="cf-step-description">Alles beginnt mit einer einfachen Anfrage. Senden Sie uns Ihr Zahn-Röntgenbild und wir erstellen Ihnen innerhalb von 24 Stunden ein detailliertes Angebot, unverbindlich.</p>
                     <ul class="cf-step-features">
-                        <li><i class="fas fa-check"></i> Free consultation via WhatsApp or phone</li>
-                        <li><i class="fas fa-check"></i> Detailed quote within 24 hours</li>
-                        <li><i class="fas fa-check"></i> Personalized treatment plan</li>
-                        <li><i class="fas fa-check"></i> No obligation or hidden costs</li>
+                        <li><i class="fas fa-check"></i> Kostenlose Beratung per WhatsApp oder Telefon</li>
+                        <li><i class="fas fa-check"></i> Detailliertes Angebot innerhalb von 24 Stunden</li>
+                        <li><i class="fas fa-check"></i> Personalisierter Behandlungsplan</li>
+                        <li><i class="fas fa-check"></i> Keine Verpflichtung oder versteckte Kosten</li>
                     </ul>
                     <button class="cf-step-cta" onclick="openAngebotSimulator()">
                         <i class="fas fa-calculator"></i>
-                        Calculate Your Angebot
+                        Ihr Angebot berechnen
                     </button>
                 </div>
             </div>
@@ -6056,17 +6141,17 @@
                     <img src="../images/landing.images.smarco/carousel-sanmarco-3.jpg" alt="Organizzazione viaggio" loading="lazy">
                 </div>
                 <div class="cf-step-text">
-                    <div class="cf-step-number"><span>02</span> Second Schritt</div>
-                    <h2>Ready to Travel? <span>We Take Care</span> of Everything</h2>
-                    <p class="cf-step-description">Once the quote is confirmed, our team takes care of organizing every detail of your trip. You just need to book the flight!</p>
+                    <div class="cf-step-number"><span>02</span> Zweiter Schritt</div>
+                    <h2>Reisebereit? <span>Wir kümmern uns</span> um alles</h2>
+                    <p class="cf-step-description">Sobald das Angebot bestätigt ist, kümmert sich unser Team um die Organisation jedes Details Ihrer Reise. Sie müssen nur den Flug buchen!</p>
                     <ul class="cf-step-features">
-                        <li><i class="fas fa-check"></i> Flight booking assistance</li>
-                        <li><i class="fas fa-check"></i> Advice on dates and length of stay</li>
-                        <li><i class="fas fa-check"></i> 24/7 English support</li>
-                        <li><i class="fas fa-check"></i> Complete travel coordination</li>
+                        <li><i class="fas fa-check"></i> Unterstützung bei der Flugbuchung</li>
+                        <li><i class="fas fa-check"></i> Beratung zu Reisedaten und Aufenthaltsdauer</li>
+                        <li><i class="fas fa-check"></i> 24/7 deutschsprachiger Support</li>
+                        <li><i class="fas fa-check"></i> Komplette Reisekoordination</li>
                     </ul>
                     <button class="cf-overview-btn cf-overview-btn-flight" onclick="openFlightSearch()" style="margin-top: 20px;">
-                        <i class="fas fa-plane"></i> Search Flights
+                        <i class="fas fa-plane"></i> Flüge suchen
                     </button>
                 </div>
             </div>
@@ -6081,14 +6166,14 @@
                     <img src="../images/tour/Tirana_28.jpg" alt="Transfer aeroporto Tirana" loading="lazy">
                 </div>
                 <div class="cf-step-text">
-                    <div class="cf-step-number"><span>03</span> Third Schritt</div>
-                    <h2>From Airport to Clinic: <span>Kostenloser Transfer</span></h2>
-                    <p class="cf-step-description">Upon arrival at Tirana airport, our driver will be waiting to take you comfortably to the clinic or your accommodation. Completely free service.</p>
+                    <div class="cf-step-number"><span>03</span> Dritter Schritt</div>
+                    <h2>Vom Flughafen zur Klinik: <span>Kostenloser Transfer</span></h2>
+                    <p class="cf-step-description">Bei der Ankunft am Flughafen Tirana erwartet Sie unser Fahrer, der Sie bequem zur Klinik oder Ihrer Unterkunft bringt. Völlig kostenloser Service.</p>
                     <ul class="cf-step-features">
-                        <li><i class="fas fa-check"></i> Dedicated driver at Tirana airport</li>
-                        <li><i class="fas fa-check"></i> Free round-trip transfer</li>
-                        <li><i class="fas fa-check"></i> Comfortable air-conditioned vehicles</li>
-                        <li><i class="fas fa-check"></i> Transfers included during your stay</li>
+                        <li><i class="fas fa-check"></i> Persönlicher Fahrer am Flughafen Tirana</li>
+                        <li><i class="fas fa-check"></i> Kostenloser Hin- und Rücktransfer</li>
+                        <li><i class="fas fa-check"></i> Komfortable klimatisierte Fahrzeuge</li>
+                        <li><i class="fas fa-check"></i> Transfers während Ihres Aufenthalts inklusive</li>
                     </ul>
                 </div>
             </div>
@@ -6103,17 +6188,17 @@
                     <img src="../images/tour/la-splendida-cupola-ingresso.jpg" alt="Alloggio confortevole Tirana" loading="lazy">
                 </div>
                 <div class="cf-step-text">
-                    <div class="cf-step-number"><span>04</span> Fourth Schritt</div>
-                    <h2>Comfortable <span>Stay</span> in Tirana</h2>
-                    <p class="cf-step-description">We help you find the perfect accommodation near the clinic. 4-star hotels, modern apartments or cozy B&Bs: choose the ideal solution for you.</p>
+                    <div class="cf-step-number"><span>04</span> Vierter Schritt</div>
+                    <h2>Komfortabler <span>Aufenthalt</span> in Tirana</h2>
+                    <p class="cf-step-description">Wir helfen Ihnen, die perfekte Unterkunft in der Nähe der Klinik zu finden. 4-Sterne-Hotels, moderne Apartments oder gemütliche B&Bs: Wählen Sie die ideale Lösung für Sie.</p>
                     <ul class="cf-step-features">
-                        <li><i class="fas fa-check"></i> Partner hotels at special rates</li>
-                        <li><i class="fas fa-check"></i> Facilities near the clinic</li>
-                        <li><i class="fas fa-check"></i> Booking assistance</li>
-                        <li><i class="fas fa-check"></i> Tirana: safe and welcoming city</li>
+                        <li><i class="fas fa-check"></i> Partnerhotels zu Sonderkonditionen</li>
+                        <li><i class="fas fa-check"></i> Unterkünfte in Kliniknähe</li>
+                        <li><i class="fas fa-check"></i> Buchungsunterstützung</li>
+                        <li><i class="fas fa-check"></i> Tirana: sichere und einladende Stadt</li>
                     </ul>
                     <button class="cf-overview-btn cf-overview-btn-tirana" onclick="openTiranaModal()" style="margin-top: 20px;">
-                        <i class="fas fa-calculator"></i> Plan Your Itinerary
+                        <i class="fas fa-calculator"></i> Ihre Reiseroute planen
                     </button>
                 </div>
             </div>
@@ -6128,14 +6213,14 @@
                     <img src="../images/landing.images.smarco/dentista-paziente.jpg" alt="Trattamenti dentali indolori" loading="lazy">
                 </div>
                 <div class="cf-step-text">
-                    <div class="cf-step-number"><span>05</span> Fifth Schritt</div>
-                    <h2>Pain-Free <span>Behandlungen</span> with Advanced Technology</h2>
-                    <p class="cf-step-description">Our clinics use the most modern technologies and advanced protocols to ensure painless treatments and excellent results.</p>
+                    <div class="cf-step-number"><span>05</span> Fünfter Schritt</div>
+                    <h2>Schmerzfreie <span>Behandlungen</span> mit modernster Technologie</h2>
+                    <p class="cf-step-description">Unsere Kliniken verwenden modernste Technologien und fortschrittliche Protokolle, um schmerzfreie Behandlungen und ausgezeichnete Ergebnisse zu gewährleisten.</p>
                     <ul class="cf-step-features">
-                        <li><i class="fas fa-check"></i> Conscious sedation available</li>
-                        <li><i class="fas fa-check"></i> Latest generation digital technologies</li>
-                        <li><i class="fas fa-check"></i> Minimally invasive protocols</li>
-                        <li><i class="fas fa-check"></i> Specialized dentists with international experience</li>
+                        <li><i class="fas fa-check"></i> Bewusste Sedierung verfügbar</li>
+                        <li><i class="fas fa-check"></i> Neueste digitale Technologien</li>
+                        <li><i class="fas fa-check"></i> Minimalinvasive Protokolle</li>
+                        <li><i class="fas fa-check"></i> Spezialisierte Zahnärzte mit internationaler Erfahrung</li>
                     </ul>
                 </div>
             </div>
@@ -6150,14 +6235,14 @@
                     <img src="../images/landing.images.smarco/carousel-sanmarco-6.jpg" alt="Esperti Zahnimplantate" loading="lazy">
                 </div>
                 <div class="cf-step-text">
-                    <div class="cf-step-number"><span>06</span> Sixth Schritt</div>
-                    <h2>Experts in <span>Implantology</span> and Dental Prosthetics</h2>
-                    <p class="cf-step-description">Our specialists have placed thousands of implants with success rates above 98%. We use only certified materials with lifetime warranty.</p>
+                    <div class="cf-step-number"><span>06</span> Sechster Schritt</div>
+                    <h2>Experten für <span>Implantologie</span> und Zahnprothetik</h2>
+                    <p class="cf-step-description">Unsere Spezialisten haben Tausende von Implantaten mit einer Erfolgsquote von über 98% gesetzt. Wir verwenden nur zertifizierte Materialien mit lebenslanger Garantie.</p>
                     <ul class="cf-step-features">
-                        <li><i class="fas fa-check"></i> Premium implants: Nobel, Straumann, Alpha Bio</li>
-                        <li><i class="fas fa-check"></i> Lifetime warranty on implants</li>
-                        <li><i class="fas fa-check"></i> Over 10,000 implants placed</li>
-                        <li><i class="fas fa-check"></i> Success rate &gt;98%</li>
+                        <li><i class="fas fa-check"></i> Premium-Implantate: Nobel, Straumann, Alpha Bio</li>
+                        <li><i class="fas fa-check"></i> Lebenslange Garantie auf Implantate</li>
+                        <li><i class="fas fa-check"></i> Über 10.000 gesetzte Implantate</li>
+                        <li><i class="fas fa-check"></i> Erfolgsquote &gt;98%</li>
                     </ul>
                     <button class="cf-overview-btn cf-overview-btn-booking" onclick="openBookingModal()" style="margin-top: 20px;">
                         <i class="fas fa-calendar-check"></i> Jetzt buchen
@@ -6461,7 +6546,7 @@
                             <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
                         </svg>
                     </div>
-                    <p class="review-text-enhanced">From the first call to the final result, everything was perfect! Impeccable organization, transfer included, partner hotel. I felt taken care of and pampered. Exceptional result!</p>
+                    <p class="review-text-enhanced">Vom ersten Anruf bis zum Endergebnis war alles perfekt! Einwandfreie Organisation, Transfer inklusive, Partnerhotel. Ich fühlte mich umsorgt und verwöhnt. Außergewöhnliches Ergebnis!</p>
                 </div>
 
                 <!-- Review 7 - Marco Bianchi -->
@@ -6531,7 +6616,7 @@
                 <path fill="#FBBC05" d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z"/>
                 <path fill="#EA4335" d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z"/>
             </svg>
-            View all 168 reviews on Google
+            Alle 168 Bewertungen auf Google ansehen
         </a>
     </div>
 </section>
@@ -8033,7 +8118,7 @@ document.getElementById('lead-form').addEventListener('submit', async function(e
             nome: firstName,
             cognome: lastName,
             city: formData.city,
-            phone: formData.phone,
+            telefono: formData.phone,
             email: formData.email || ''
         }]
     };
@@ -11236,11 +11321,11 @@ console.log('✅ Flight Search initialized');
                 </div>
                 <div class="date-inputs" id="date-inputs" style="display:none">
                     <div class="date-input-group">
-                        <label><i class="fas fa-plane-arrival"></i> First Session</label>
+                        <label><i class="fas fa-plane-arrival"></i> Erste Sitzung</label>
                         <input type="date" id="booking-date-prima" class="booking-input">
                     </div>
                     <div class="date-input-group">
-                        <label><i class="fas fa-plane-departure"></i> Second Session (optional)</label>
+                        <label><i class="fas fa-plane-departure"></i> Zweite Sitzung (optional)</label>
                         <input type="date" id="booking-date-seconda" class="booking-input">
                     </div>
                 </div>
@@ -14814,8 +14899,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h3 class="place-section-title"><i class="fas fa-landmark"></i> Main Attractions</h3>
                 <div class="place-grid">
                     <div class="place-card" onclick="openGoogleSearch('Piazza Skanderbeg Tirana Albania')">
-                        <div class="place-card-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-landmark" style="font-size: 3rem; color: white; opacity: 0.8;"></i>
+                        <div class="place-card-image" style="background: url('../images/tour/skanderbeg-square-real.jpg') center/cover no-repeat;">
+                            
                             <div class="place-card-rating"><i class="fas fa-star"></i> 4.7</div>
                         </div>
                         <div class="place-card-content">
@@ -14840,8 +14925,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
 
                     <div class="place-card" onclick="openGoogleSearch('BunkArt Museum Tirana Albania')">
-                        <div class="place-card-image" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-dungeon" style="font-size: 3rem; color: white; opacity: 0.8;"></i>
+                        <div class="place-card-image" style="background: url('../images/tour/bunkart-real.jpg') center/cover no-repeat;">
+                            
                             <div class="place-card-rating"><i class="fas fa-star"></i> 4.8</div>
                         </div>
                         <div class="place-card-content">
@@ -14866,8 +14951,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
 
                     <div class="place-card" onclick="openGoogleSearch('Monte Dajti Teleferica Tirana Albania')">
-                        <div class="place-card-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-mountain" style="font-size: 3rem; color: white; opacity: 0.8;"></i>
+                        <div class="place-card-image" style="background: url('../images/tour/dajti-real.jpg') center/cover no-repeat;">
+                            
                             <div class="place-card-rating"><i class="fas fa-star"></i> 4.6</div>
                         </div>
                         <div class="place-card-content">
@@ -14892,8 +14977,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
 
                     <div class="place-card" onclick="openGoogleSearch('Blloku District Tirana nightlife')">
-                        <div class="place-card-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-cocktail" style="font-size: 3rem; color: white; opacity: 0.8;"></i>
+                        <div class="place-card-image" style="background: url('../images/tour/blloku-real.jpg') center/cover no-repeat;">
+                            
                             <div class="place-card-rating"><i class="fas fa-star"></i> 4.5</div>
                         </div>
                         <div class="place-card-content">
@@ -14923,8 +15008,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h3 class="place-section-title"><i class="fas fa-shopping-bag"></i> Shopping & Leisure</h3>
                 <div class="place-grid">
                     <div class="place-card" onclick="openGoogleSearch('TEG Tirana East Gate shopping mall')">
-                        <div class="place-card-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-shopping-bag" style="font-size: 3rem; color: white; opacity: 0.8;"></i>
+                        <div class="place-card-image" style="background: url('../images/tour/teg-real.jpg') center/cover no-repeat;">
+                            
                             <div class="place-card-rating"><i class="fas fa-star"></i> 4.4</div>
                         </div>
                         <div class="place-card-content">
@@ -14949,8 +15034,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
 
                     <div class="place-card" onclick="openGoogleSearch('Grand Park Tirana Lake artificial')">
-                        <div class="place-card-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-tree" style="font-size: 3rem; color: white; opacity: 0.8;"></i>
+                        <div class="place-card-image" style="background: url('../images/tour/grand-park-real.jpg') center/cover no-repeat;">
+                            
                             <div class="place-card-rating"><i class="fas fa-star"></i> 4.7</div>
                         </div>
                         <div class="place-card-content">
@@ -14975,8 +15060,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
 
                     <div class="place-card" onclick="openGoogleSearch('National History Museum Tirana Albania')">
-                        <div class="place-card-image" style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%); display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-university" style="font-size: 3rem; color: white; opacity: 0.8;"></i>
+                        <div class="place-card-image" style="background: url('../images/tour/national-museum-real.jpg') center/cover no-repeat;">
+                            
                             <div class="place-card-rating"><i class="fas fa-star"></i> 4.5</div>
                         </div>
                         <div class="place-card-content">
@@ -15009,6 +15094,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h3 class="place-section-title"><i class="fas fa-coffee"></i> Breakfast (€3-15 per person)</h3>
                 <div class="restaurant-grid">
                     <div class="restaurant-card" onclick="openGoogleSearch('Mon Cheri pasticceria Tirana')">
+                        <div class="restaurant-image" style="background: url('../images/restaurants/moncheri-real.jpg') center/cover no-repeat; height: 120px; border-radius: 8px 8px 0 0;"></div>
                         <div class="restaurant-header">
                             <div class="restaurant-icon breakfast"><i class="fas fa-sun"></i></div>
                             <div class="restaurant-info">
@@ -15038,6 +15124,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
 
                     <div class="restaurant-card" onclick="openGoogleSearch('Sophie Cafe Tirana brunch')">
+                        <div class="restaurant-image" style="background: url('../images/restaurants/sophie-real.jpg') center/cover no-repeat; height: 120px; border-radius: 8px 8px 0 0;"></div>
                         <div class="restaurant-header">
                             <div class="restaurant-icon breakfast"><i class="fas fa-sun"></i></div>
                             <div class="restaurant-info">
@@ -15067,6 +15154,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
 
                     <div class="restaurant-card" onclick="openGoogleSearch('Komiteti Kafe Muzeum Tirana')">
+                        <div class="restaurant-image" style="background: url('../images/restaurants/komiteti-real.jpg') center/cover no-repeat; height: 120px; border-radius: 8px 8px 0 0;"></div>
                         <div class="restaurant-header">
                             <div class="restaurant-icon breakfast"><i class="fas fa-sun"></i></div>
                             <div class="restaurant-info">
@@ -15101,6 +15189,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h3 class="place-section-title"><i class="fas fa-hamburger"></i> Lunch (€8-30 per person)</h3>
                 <div class="restaurant-grid">
                     <div class="restaurant-card" onclick="openGoogleSearch('Oda Restaurant Tirana traditional Albanian')">
+                        <div class="restaurant-image" style="background: url('../images/restaurants/oda-real.jpg') center/cover no-repeat; height: 120px; border-radius: 8px 8px 0 0;"></div>
                         <div class="restaurant-header">
                             <div class="restaurant-icon lunch"><i class="fas fa-leaf"></i></div>
                             <div class="restaurant-info">
@@ -15130,6 +15219,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
 
                     <div class="restaurant-card" onclick="openGoogleSearch('Era Restaurant Tirana modern Albanian')">
+                        <div class="restaurant-image" style="background: url('../images/restaurants/era-real.jpg') center/cover no-repeat; height: 120px; border-radius: 8px 8px 0 0;"></div>
                         <div class="restaurant-header">
                             <div class="restaurant-icon lunch"><i class="fas fa-leaf"></i></div>
                             <div class="restaurant-info">
@@ -15159,6 +15249,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
 
                     <div class="restaurant-card" onclick="openGoogleSearch('Zgara Korcare Tirana BBQ')">
+                        <div class="restaurant-image" style="background: url('../images/restaurants/zgara-real.jpg') center/cover no-repeat; height: 120px; border-radius: 8px 8px 0 0;"></div>
                         <div class="restaurant-header">
                             <div class="restaurant-icon lunch"><i class="fas fa-leaf"></i></div>
                             <div class="restaurant-info">
@@ -15193,6 +15284,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h3 class="place-section-title"><i class="fas fa-moon"></i> Dinner (€15-60 per person)</h3>
                 <div class="restaurant-grid">
                     <div class="restaurant-card" onclick="openGoogleSearch('Mullixhiu Restaurant Tirana fine dining')">
+                        <div class="restaurant-image" style="background: url('../images/restaurants/mullixhiu-real.jpg') center/cover no-repeat; height: 120px; border-radius: 8px 8px 0 0;"></div>
                         <div class="restaurant-header">
                             <div class="restaurant-icon dinner"><i class="fas fa-wine-glass-alt"></i></div>
                             <div class="restaurant-info">
@@ -15222,6 +15314,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
 
                     <div class="restaurant-card" onclick="openGoogleSearch('Marche Restaurant Tirana rooftop')">
+                        <div class="restaurant-image" style="background: url('../images/restaurants/marche-real.jpg') center/cover no-repeat; height: 120px; border-radius: 8px 8px 0 0;"></div>
                         <div class="restaurant-header">
                             <div class="restaurant-icon dinner"><i class="fas fa-wine-glass-alt"></i></div>
                             <div class="restaurant-info">
@@ -15251,6 +15344,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
 
                     <div class="restaurant-card" onclick="openGoogleSearch('Juvenilja Restaurant Tirana seafood')">
+                        <div class="restaurant-image" style="background: url('../images/restaurants/juvenilja-real.jpg') center/cover no-repeat; height: 120px; border-radius: 8px 8px 0 0;"></div>
                         <div class="restaurant-header">
                             <div class="restaurant-icon dinner"><i class="fas fa-wine-glass-alt"></i></div>
                             <div class="restaurant-info">
@@ -15708,3 +15802,7 @@ console.log('✅ Tirana Experience Modal initialized');
 
 </body>
 </html>
+
+
+
+

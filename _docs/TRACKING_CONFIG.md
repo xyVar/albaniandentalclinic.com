@@ -1,6 +1,6 @@
 # Albanian Dental Clinic - Tracking Configuration
 **Site:** albaniandentalclinic.com (Multilingual)
-**Last Updated:** December 31, 2025
+**Last Updated:** January 4, 2026
 
 ---
 
@@ -70,11 +70,29 @@ cd "landing page - multilingual"
 firebase deploy
 ```
 
-**Last Deploy:** December 31, 2025
+**Last Deploy:** January 4, 2026
+
+---
+
+## Meta Lead Ads (Zapier Integration)
+
+- **Meta Page:** Dental Clinic Albania
+- **Page ID:** 865244536673113
+- **Form Name:** Multi.Form.Lingual
+- **Zap Name:** multilingual.crm.adc
+- **Status:** WORKING
+
+See `_docs/ZAPIER_META_INTEGRATION.md` for full webhook configuration.
 
 ---
 
 ## Tracking History
+
+### January 4, 2026
+- Fixed form phone field: `phone` → `telefono` (CRM expects Italian field name)
+- Configured Zapier webhook for Meta Lead Ads
+- Tested and verified leads flowing from Meta → Zapier → CRM
+- Deployed all 6 language sites with phone fix
 
 ### December 31, 2025
 - Deployed all language subfolders

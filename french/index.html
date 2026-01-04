@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -12,6 +12,33 @@
     <meta name="facebook-domain-verification" content="ryldelrcctqjjaxntgw0e8b5afd218" />
 
     <title>Clinique Dentaire Albanaise | Réseau de Cliniques Certifiées | Économisez 75%</title>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://albaniandentalclinic.com/french/" />
+
+    <!-- Hreflang Tags for Multilingual SEO -->
+    <link rel="alternate" hreflang="en" href="https://albaniandentalclinic.com/" />
+    <link rel="alternate" hreflang="de" href="https://albaniandentalclinic.com/deutsch/" />
+    <link rel="alternate" hreflang="fr" href="https://albaniandentalclinic.com/french/" />
+    <link rel="alternate" hreflang="es" href="https://albaniandentalclinic.com/espagnol/" />
+    <link rel="alternate" hreflang="nl" href="https://albaniandentalclinic.com/dutch/" />
+    <link rel="alternate" hreflang="pl" href="https://albaniandentalclinic.com/poland/" />
+    <link rel="alternate" hreflang="x-default" href="https://albaniandentalclinic.com/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://albaniandentalclinic.com/french/" />
+    <meta property="og:title" content="Clinique Dentaire Albanaise | Économisez 75% sur les Implants" />
+    <meta property="og:description" content="Réseau de cliniques dentaires certifiées en Albanie. Économisez jusqu'à 75% sur les implants et traitements dentaires. 10+ ans d'expérience, 4.8 étoiles Google." />
+    <meta property="og:image" content="https://albaniandentalclinic.com/images/landing/clinica-san-marco.jpg" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:site_name" content="Albanian Dental Clinic" />
+
+    <!-- X (Twitter) Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Clinique Dentaire Albanaise | Économisez 75% sur les Implants" />
+    <meta name="twitter:description" content="Réseau de cliniques dentaires certifiées en Albanie. Économisez jusqu'à 75% sur les implants dentaires." />
+    <meta name="twitter:image" content="https://albaniandentalclinic.com/images/landing/clinica-san-marco.jpg" />
 
     <!-- Consent Mode v2 - Initialize FIRST -->
     <script>
@@ -1515,16 +1542,18 @@
 
         .pricing-card-image {
             width: 100%;
-            height: 120px;
-            object-fit: contain;
+            height: 160px;
+            object-fit: cover;
             background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-            padding: 16px;
+            padding: 0;
+            border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+            overflow: hidden;
         }
 
         @media (min-width: 768px) {
             .pricing-card-image {
-                height: 160px;
-                padding: 20px;
+                height: 180px;
+                padding: 0;
             }
 
             .pricing-info h3 {
@@ -5435,6 +5464,62 @@
             }
         }
     </style>
+
+    <!-- JSON-LD Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Dentist",
+        "name": "Albanian Dental Clinic",
+        "alternateName": "ADC - Réseau de cliniques dentaires certifiées",
+        "description": "Réseau de cliniques dentaires certifiées en Albanie. Implants et traitements dentaires premium à des prix 75% inférieurs à ceux de l'Europe occidentale.",
+        "url": "https://albaniandentalclinic.com/french/",
+        "logo": "https://albaniandentalclinic.com/images/landing/sanmarco-logo-icon.png",
+        "image": "https://albaniandentalclinic.com/images/landing/clinica-san-marco.jpg",
+        "telephone": "+355-69-XXX-XXXX",
+        "email": "info@albaniandentalclinic.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Tirana",
+            "addressLocality": "Tirana",
+            "addressCountry": "AL"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "41.3275",
+            "longitude": "19.8187"
+        },
+        "priceRange": "€€",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "500",
+            "bestRating": "5"
+        },
+        "medicalSpecialty": ["Dentisterie", "Chirurgie orale", "Implantologie"],
+        "availableService": [
+            {
+                "@type": "MedicalProcedure",
+                "name": "Implant dentaire",
+                "description": "Implants dentaires premium avec garantie à vie"
+            },
+            {
+                "@type": "MedicalProcedure",
+                "name": "Couronne en zircone",
+                "description": "Couronnes dentaires en zircone de haute qualité"
+            },
+            {
+                "@type": "MedicalProcedure",
+                "name": "Restauration complète",
+                "description": "Réhabilitation dentaire complète avec implants"
+            }
+        ],
+        "sameAs": [
+            "https://www.facebook.com/albaniandentalclinic",
+            "https://www.instagram.com/albaniandentalclinic"
+        ]
+    }
+    </script>
 </head>
 <body>
 
@@ -5456,7 +5541,7 @@
         </a>
         <a href="#pricing" class="trust-bar-item">
             <i class="fas fa-shield-alt"></i>
-            <span>Lifetime Warranty</span>
+            <span>Garantie à Vie</span>
         </a>
         <a href="#come-funziona" class="trust-bar-item">
             <i class="fas fa-user-md"></i>
@@ -5489,7 +5574,7 @@
         </a>
         <a href="#pricing" class="trust-bar-item">
             <i class="fas fa-shield-alt"></i>
-            <span>Lifetime Warranty</span>
+            <span>Garantie à Vie</span>
         </a>
         <a href="#come-funziona" class="trust-bar-item">
             <i class="fas fa-user-md"></i>
@@ -5707,14 +5792,14 @@
                         <img src="../images/arcatacompleta.PNG" alt="Full-Arch Rehabilitation on Implants">
                     </div>
                     <div class="hero-carousel-slide">
-                        <img src="../images/arcata completa 2.PNG" alt="All-on-4 Upper Arch">
+                        <img src="../images/arcata completa 2.PNG" alt="All-on-4 Upper Arch" loading="lazy">
                     </div>
                     <div class="hero-carousel-slide">
-                        <img src="../images/arcata completa3.PNG" alt="All-on-6 Lower Arch">
+                        <img src="../images/arcata completa3.PNG" alt="All-on-6 Lower Arch" loading="lazy">
                     </div>
                     <!-- Clinic Interior Images -->
                     <div class="hero-carousel-slide">
-                        <img src="../images/sanmarco9.PNG" alt="San Marco Dental Clinic - Main Hall">
+                        <img src="../images/sanmarco9.PNG" alt="San Marco Dental Clinic - Main Hall" loading="lazy">
                     </div>
                     <div class="hero-carousel-slide">
                         <img src="../images/sanamrco10.PNG" alt="San Marco Dental Clinic - Sterile Corridors">
@@ -5937,7 +6022,7 @@
             <div class="cf-overview-steps">
                 <div class="cf-overview-step cf-overview-step-clickable cf-overview-step-highlight" onclick="openQuoteSimulator()">
                     <div class="cf-overview-icon cf-overview-icon-large">
-                        <img src="../images/landing.images.smarco/dentista-paziente.jpg" alt="Calcola Quote">
+                        <img src="../images/landing.images.smarco/dentista-paziente.jpg" alt="Calcola Quote" loading="lazy">
                     </div>
                     <div class="cf-overview-number">01</div>
                     <h3>Calculez Votre Devis</h3>
@@ -5948,7 +6033,7 @@
                 </div>
                 <div class="cf-overview-step cf-overview-step-clickable cf-overview-step-flight" onclick="openFlightSearch()">
                     <div class="cf-overview-icon cf-overview-icon-large">
-                        <img src="../images/tour/Tirana_28.jpg" alt="Voli per Tirana">
+                        <img src="../images/tour/Tirana_28.jpg" alt="Voli per Tirana" loading="lazy">
                     </div>
                     <div class="cf-overview-number">02</div>
                     <h3>Rechercher des Vols vers Tirana</h3>
@@ -5962,7 +6047,7 @@
                         <i class="fas fa-credit-card"></i> RÉSERVER
                     </div>
                     <div class="cf-overview-icon cf-overview-icon-large">
-                        <img src="../images/landing.images.smarco/dental-clinic.jpg" alt="Réservez Votre Traitement">
+                        <img src="../images/landing.images.smarco/dental-clinic.jpg" alt="Réservez Votre Traitement" loading="lazy">
                     </div>
                     <div class="cf-overview-number">03</div>
                     <h3>Réservez Votre Traitement</h3>
@@ -5976,7 +6061,7 @@
                         <i class="fas fa-star"></i> DÉCOUVRIR TIRANA
                     </div>
                     <div class="cf-overview-icon cf-overview-icon-large">
-                        <img src="../images/tour/piramide-tirana.jpg" alt="Tirana Experience - Piramide di Tirana">
+                        <img src="../images/tour/piramide-tirana.jpg" alt="Tirana Experience - Piramide di Tirana" loading="lazy">
                     </div>
                     <div class="cf-overview-number">04</div>
                     <h3>Votre Expérience</h3>
@@ -6003,7 +6088,7 @@
 
             <div class="cf-video-card">
                 <div class="cf-video-container">
-                    <video id="cfHeroVideo" poster="images/sanmarco9.PNG" preload="metadata" data-start-time="11">
+                    <video id="cfHeroVideo" poster="../images/sanmarco9.PNG" preload="metadata" data-start-time="11">
                         <source src="../images/instagram.videos/eng_video_1.mp4#t=11" type="video/mp4">
                     </video>
                     <div class="cf-video-play-btn" onclick="toggleVideoPlay('cfHeroVideo', this)">
@@ -8033,7 +8118,7 @@ document.getElementById('lead-form').addEventListener('submit', async function(e
             nome: firstName,
             cognome: lastName,
             city: formData.city,
-            phone: formData.phone,
+            telefono: formData.phone,
             email: formData.email || ''
         }]
     };
@@ -8865,7 +8950,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <!-- First Session -->
             <div class="simulator-session" id="prima-seduta">
                 <div class="session-header">
-                    <h3><i class="fas fa-calendar-day"></i> First Session</h3>
+                    <h3><i class="fas fa-calendar-day"></i> Première Séance</h3>
                     <span class="session-total" id="prima-seduta-total">€0.00</span>
                 </div>
 
@@ -8876,7 +8961,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <input type="text"
                                id="search-prima"
                                class="product-search-input"
-                               placeholder="Search service (e.g., implant, crown, cleaning...)"
+                               placeholder="Rechercher un service (ex: implant, couronne, nettoyage...)"
                                oninput="handleSearch('prima', this.value)"
                                onfocus="showDropdown('prima')"
                                autocomplete="off">
@@ -8894,7 +8979,7 @@ document.addEventListener('DOMContentLoaded', function() {
             <!-- Second Session -->
             <div class="simulator-session" id="seconda-seduta">
                 <div class="session-header">
-                    <h3><i class="fas fa-calendar-check"></i> Second Session</h3>
+                    <h3><i class="fas fa-calendar-check"></i> Deuxième Séance</h3>
                     <span class="session-total" id="seconda-seduta-total">€0.00</span>
                 </div>
 
@@ -8905,7 +8990,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         <input type="text"
                                id="search-seconda"
                                class="product-search-input"
-                               placeholder="Search service (e.g., implant, crown, cleaning...)"
+                               placeholder="Rechercher un service (ex: implant, couronne, nettoyage...)"
                                oninput="handleSearch('seconda', this.value)"
                                onfocus="showDropdown('seconda')"
                                autocomplete="off">
@@ -8924,7 +9009,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <!-- Grand Total -->
         <div class="simulator-grand-total">
             <div class="grand-total-row">
-                <span class="grand-total-label">Estimated Total:</span>
+                <span class="grand-total-label">Total Estimé:</span>
                 <span class="grand-total-value" id="grand-total">€0.00</span>
             </div>
         </div>
@@ -11184,11 +11269,11 @@ console.log('✅ Flight Search initialized');
                 </div>
                 <div class="date-inputs" id="date-inputs" style="display:none">
                     <div class="date-input-group">
-                        <label><i class="fas fa-plane-arrival"></i> First Session</label>
+                        <label><i class="fas fa-plane-arrival"></i> Première Séance</label>
                         <input type="date" id="booking-date-prima" class="booking-input">
                     </div>
                     <div class="date-input-group">
-                        <label><i class="fas fa-plane-departure"></i> Second Session (optional)</label>
+                        <label><i class="fas fa-plane-departure"></i> Deuxième Séance (optionnel)</label>
                         <input type="date" id="booking-date-seconda" class="booking-input">
                     </div>
                 </div>
@@ -14762,8 +14847,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h3 class="place-section-title"><i class="fas fa-landmark"></i> Main Attractions</h3>
                 <div class="place-grid">
                     <div class="place-card" onclick="openGoogleSearch('Piazza Skanderbeg Tirana Albania')">
-                        <div class="place-card-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-landmark" style="font-size: 3rem; color: white; opacity: 0.8;"></i>
+                        <div class="place-card-image" style="background: url('../images/tour/skanderbeg-square-real.jpg') center/cover no-repeat;">
+                            
                             <div class="place-card-rating"><i class="fas fa-star"></i> 4.7</div>
                         </div>
                         <div class="place-card-content">
@@ -14788,8 +14873,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
 
                     <div class="place-card" onclick="openGoogleSearch('BunkArt Museum Tirana Albania')">
-                        <div class="place-card-image" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-dungeon" style="font-size: 3rem; color: white; opacity: 0.8;"></i>
+                        <div class="place-card-image" style="background: url('../images/tour/bunkart-real.jpg') center/cover no-repeat;">
+                            
                             <div class="place-card-rating"><i class="fas fa-star"></i> 4.8</div>
                         </div>
                         <div class="place-card-content">
@@ -14814,8 +14899,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
 
                     <div class="place-card" onclick="openGoogleSearch('Monte Dajti Teleferica Tirana Albania')">
-                        <div class="place-card-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-mountain" style="font-size: 3rem; color: white; opacity: 0.8;"></i>
+                        <div class="place-card-image" style="background: url('../images/tour/dajti-real.jpg') center/cover no-repeat;">
+                            
                             <div class="place-card-rating"><i class="fas fa-star"></i> 4.6</div>
                         </div>
                         <div class="place-card-content">
@@ -14840,8 +14925,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
 
                     <div class="place-card" onclick="openGoogleSearch('Blloku District Tirana nightlife')">
-                        <div class="place-card-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-cocktail" style="font-size: 3rem; color: white; opacity: 0.8;"></i>
+                        <div class="place-card-image" style="background: url('../images/tour/blloku-real.jpg') center/cover no-repeat;">
+                            
                             <div class="place-card-rating"><i class="fas fa-star"></i> 4.5</div>
                         </div>
                         <div class="place-card-content">
@@ -14871,8 +14956,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h3 class="place-section-title"><i class="fas fa-shopping-bag"></i> Shopping & Leisure</h3>
                 <div class="place-grid">
                     <div class="place-card" onclick="openGoogleSearch('TEG Tirana East Gate shopping mall')">
-                        <div class="place-card-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-shopping-bag" style="font-size: 3rem; color: white; opacity: 0.8;"></i>
+                        <div class="place-card-image" style="background: url('../images/tour/teg-real.jpg') center/cover no-repeat;">
+                            
                             <div class="place-card-rating"><i class="fas fa-star"></i> 4.4</div>
                         </div>
                         <div class="place-card-content">
@@ -14897,8 +14982,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
 
                     <div class="place-card" onclick="openGoogleSearch('Grand Park Tirana Lake artificial')">
-                        <div class="place-card-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-tree" style="font-size: 3rem; color: white; opacity: 0.8;"></i>
+                        <div class="place-card-image" style="background: url('../images/tour/grand-park-real.jpg') center/cover no-repeat;">
+                            
                             <div class="place-card-rating"><i class="fas fa-star"></i> 4.7</div>
                         </div>
                         <div class="place-card-content">
@@ -14923,8 +15008,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
 
                     <div class="place-card" onclick="openGoogleSearch('National History Museum Tirana Albania')">
-                        <div class="place-card-image" style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%); display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-university" style="font-size: 3rem; color: white; opacity: 0.8;"></i>
+                        <div class="place-card-image" style="background: url('../images/tour/national-museum-real.jpg') center/cover no-repeat;">
+                            
                             <div class="place-card-rating"><i class="fas fa-star"></i> 4.5</div>
                         </div>
                         <div class="place-card-content">
@@ -14957,6 +15042,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h3 class="place-section-title"><i class="fas fa-coffee"></i> Breakfast (€3-15 per person)</h3>
                 <div class="restaurant-grid">
                     <div class="restaurant-card" onclick="openGoogleSearch('Mon Cheri pasticceria Tirana')">
+                        <div class="restaurant-image" style="background: url('../images/restaurants/moncheri-real.jpg') center/cover no-repeat; height: 120px; border-radius: 8px 8px 0 0;"></div>
                         <div class="restaurant-header">
                             <div class="restaurant-icon breakfast"><i class="fas fa-sun"></i></div>
                             <div class="restaurant-info">
@@ -14986,6 +15072,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
 
                     <div class="restaurant-card" onclick="openGoogleSearch('Sophie Cafe Tirana brunch')">
+                        <div class="restaurant-image" style="background: url('../images/restaurants/sophie-real.jpg') center/cover no-repeat; height: 120px; border-radius: 8px 8px 0 0;"></div>
                         <div class="restaurant-header">
                             <div class="restaurant-icon breakfast"><i class="fas fa-sun"></i></div>
                             <div class="restaurant-info">
@@ -15015,6 +15102,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
 
                     <div class="restaurant-card" onclick="openGoogleSearch('Komiteti Kafe Muzeum Tirana')">
+                        <div class="restaurant-image" style="background: url('../images/restaurants/komiteti-real.jpg') center/cover no-repeat; height: 120px; border-radius: 8px 8px 0 0;"></div>
                         <div class="restaurant-header">
                             <div class="restaurant-icon breakfast"><i class="fas fa-sun"></i></div>
                             <div class="restaurant-info">
@@ -15049,6 +15137,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h3 class="place-section-title"><i class="fas fa-hamburger"></i> Lunch (€8-30 per person)</h3>
                 <div class="restaurant-grid">
                     <div class="restaurant-card" onclick="openGoogleSearch('Oda Restaurant Tirana traditional Albanian')">
+                        <div class="restaurant-image" style="background: url('../images/restaurants/oda-real.jpg') center/cover no-repeat; height: 120px; border-radius: 8px 8px 0 0;"></div>
                         <div class="restaurant-header">
                             <div class="restaurant-icon lunch"><i class="fas fa-leaf"></i></div>
                             <div class="restaurant-info">
@@ -15078,6 +15167,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
 
                     <div class="restaurant-card" onclick="openGoogleSearch('Era Restaurant Tirana modern Albanian')">
+                        <div class="restaurant-image" style="background: url('../images/restaurants/era-real.jpg') center/cover no-repeat; height: 120px; border-radius: 8px 8px 0 0;"></div>
                         <div class="restaurant-header">
                             <div class="restaurant-icon lunch"><i class="fas fa-leaf"></i></div>
                             <div class="restaurant-info">
@@ -15107,6 +15197,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
 
                     <div class="restaurant-card" onclick="openGoogleSearch('Zgara Korcare Tirana BBQ')">
+                        <div class="restaurant-image" style="background: url('../images/restaurants/zgara-real.jpg') center/cover no-repeat; height: 120px; border-radius: 8px 8px 0 0;"></div>
                         <div class="restaurant-header">
                             <div class="restaurant-icon lunch"><i class="fas fa-leaf"></i></div>
                             <div class="restaurant-info">
@@ -15141,6 +15232,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <h3 class="place-section-title"><i class="fas fa-moon"></i> Dinner (€15-60 per person)</h3>
                 <div class="restaurant-grid">
                     <div class="restaurant-card" onclick="openGoogleSearch('Mullixhiu Restaurant Tirana fine dining')">
+                        <div class="restaurant-image" style="background: url('../images/restaurants/mullixhiu-real.jpg') center/cover no-repeat; height: 120px; border-radius: 8px 8px 0 0;"></div>
                         <div class="restaurant-header">
                             <div class="restaurant-icon dinner"><i class="fas fa-wine-glass-alt"></i></div>
                             <div class="restaurant-info">
@@ -15170,6 +15262,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
 
                     <div class="restaurant-card" onclick="openGoogleSearch('Marche Restaurant Tirana rooftop')">
+                        <div class="restaurant-image" style="background: url('../images/restaurants/marche-real.jpg') center/cover no-repeat; height: 120px; border-radius: 8px 8px 0 0;"></div>
                         <div class="restaurant-header">
                             <div class="restaurant-icon dinner"><i class="fas fa-wine-glass-alt"></i></div>
                             <div class="restaurant-info">
@@ -15199,6 +15292,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     </div>
 
                     <div class="restaurant-card" onclick="openGoogleSearch('Juvenilja Restaurant Tirana seafood')">
+                        <div class="restaurant-image" style="background: url('../images/restaurants/juvenilja-real.jpg') center/cover no-repeat; height: 120px; border-radius: 8px 8px 0 0;"></div>
                         <div class="restaurant-header">
                             <div class="restaurant-icon dinner"><i class="fas fa-wine-glass-alt"></i></div>
                             <div class="restaurant-info">
@@ -15656,3 +15750,7 @@ console.log('✅ Tirana Experience Modal initialized');
 
 </body>
 </html>
+
+
+
+

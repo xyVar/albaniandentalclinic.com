@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,6 +12,33 @@
     <meta name="facebook-domain-verification" content="ryldelrcctqjjaxntgw0e8b5afd218" />
 
     <title>Albanian Dental Clinic | Network of Certified Clinics | Save 75%</title>
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://albaniandentalclinic.com/" />
+
+    <!-- Hreflang Tags for Multilingual SEO -->
+    <link rel="alternate" hreflang="en" href="https://albaniandentalclinic.com/" />
+    <link rel="alternate" hreflang="de" href="https://albaniandentalclinic.com/deutsch/" />
+    <link rel="alternate" hreflang="fr" href="https://albaniandentalclinic.com/french/" />
+    <link rel="alternate" hreflang="es" href="https://albaniandentalclinic.com/espagnol/" />
+    <link rel="alternate" hreflang="nl" href="https://albaniandentalclinic.com/dutch/" />
+    <link rel="alternate" hreflang="pl" href="https://albaniandentalclinic.com/poland/" />
+    <link rel="alternate" hreflang="x-default" href="https://albaniandentalclinic.com/" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://albaniandentalclinic.com/" />
+    <meta property="og:title" content="Albanian Dental Clinic | Save 75% on Dental Implants" />
+    <meta property="og:description" content="Network of certified dental clinics in Albania. Save up to 75% on dental implants and treatments. 10+ years experience, 4.8 Google stars." />
+    <meta property="og:image" content="https://albaniandentalclinic.com/images/landing/clinica-san-marco.jpg" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:site_name" content="Albanian Dental Clinic" />
+
+    <!-- X (Twitter) Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Albanian Dental Clinic | Save 75% on Dental Implants" />
+    <meta name="twitter:description" content="Network of certified dental clinics in Albania. Save up to 75% on dental implants and treatments." />
+    <meta name="twitter:image" content="https://albaniandentalclinic.com/images/landing/clinica-san-marco.jpg" />
 
     <!-- Consent Mode v2 - Initialize FIRST -->
     <script>
@@ -1515,16 +1542,18 @@
 
         .pricing-card-image {
             width: 100%;
-            height: 120px;
-            object-fit: contain;
+            height: 160px;
+            object-fit: cover;
             background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-            padding: 16px;
+            padding: 0;
+            border-radius: var(--radius-lg) var(--radius-lg) 0 0;
+            overflow: hidden;
         }
 
         @media (min-width: 768px) {
             .pricing-card-image {
-                height: 160px;
-                padding: 20px;
+                height: 180px;
+                padding: 0;
             }
 
             .pricing-info h3 {
@@ -5435,6 +5464,62 @@
             }
         }
     </style>
+
+    <!-- JSON-LD Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Dentist",
+        "name": "Albanian Dental Clinic",
+        "alternateName": "ADC - Network of Certified Dental Clinics",
+        "description": "Network of certified dental clinics in Albania offering premium dental implants and treatments at 75% lower prices than Western Europe.",
+        "url": "https://albaniandentalclinic.com/",
+        "logo": "https://albaniandentalclinic.com/images/landing/sanmarco-logo-icon.png",
+        "image": "https://albaniandentalclinic.com/images/landing/clinica-san-marco.jpg",
+        "telephone": "+355-69-XXX-XXXX",
+        "email": "info@albaniandentalclinic.com",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Tirana",
+            "addressLocality": "Tirana",
+            "addressCountry": "AL"
+        },
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "41.3275",
+            "longitude": "19.8187"
+        },
+        "priceRange": "€€",
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "500",
+            "bestRating": "5"
+        },
+        "medicalSpecialty": ["Dentistry", "Oral Surgery", "Implantology"],
+        "availableService": [
+            {
+                "@type": "MedicalProcedure",
+                "name": "Dental Implant",
+                "description": "Premium dental implants with lifetime warranty"
+            },
+            {
+                "@type": "MedicalProcedure",
+                "name": "Zirconia Crown",
+                "description": "High-quality zirconia dental crowns"
+            },
+            {
+                "@type": "MedicalProcedure",
+                "name": "Full Arch Restoration",
+                "description": "Complete dental rehabilitation with implants"
+            }
+        ],
+        "sameAs": [
+            "https://www.facebook.com/albaniandentalclinic",
+            "https://www.instagram.com/albaniandentalclinic"
+        ]
+    }
+    </script>
 </head>
 <body>
 
@@ -5543,7 +5628,7 @@
                 <a href="#pricing">Treatments</a>
                 <div class="dropdown-menu">
                     <a href="#" onclick="openProductModal('impianti'); return false;"><i class="fas fa-tooth" style="margin-right: 10px; color: var(--primary);"></i>Dental Implants</a>
-                    <a href="#" onclick="openProductModal('corone'); return false;"><i class="fas fa-crown" style="margin-right: 10px; color: var(--primary);"></i>Crowns and Veneers</a>
+                    <a href="#" onclick="openProductModal('Crowns'); return false;"><i class="fas fa-crown" style="margin-right: 10px; color: var(--primary);"></i>Crowns and Veneers</a>
                     <a href="#" onclick="openProductModal('arcata'); return false;"><i class="fas fa-teeth" style="margin-right: 10px; color: var(--primary);"></i>All-on-4 / All-on-6</a>
                     <a href="#" onclick="openProductModal('impianti'); return false;"><i class="fas fa-bone" style="margin-right: 10px; color: var(--primary);"></i>Bone Loss Solutions</a>
                 </div>
@@ -5601,7 +5686,7 @@
         <div class="menu-section-title">Treatments</div>
         <ul>
             <li><a href="#" onclick="openProductModal('impianti'); closeMobileMenu(); return false;">Dental Implants</a></li>
-            <li><a href="#" onclick="openProductModal('corone'); closeMobileMenu(); return false;">Crowns and Veneers</a></li>
+            <li><a href="#" onclick="openProductModal('Crowns'); closeMobileMenu(); return false;">Crowns and Veneers</a></li>
             <li><a href="#" onclick="openProductModal('arcata'); closeMobileMenu(); return false;">All-on-4 / All-on-6</a></li>
             <li><a href="#" onclick="openProductModal('impianti'); closeMobileMenu(); return false;">Bone Loss Solutions</a></li>
         </ul>
@@ -5707,44 +5792,44 @@
                         <img src="images/arcatacompleta.PNG" alt="Full-Arch Rehabilitation on Implants">
                     </div>
                     <div class="hero-carousel-slide">
-                        <img src="images/arcata completa 2.PNG" alt="All-on-4 Upper Arch">
+                        <img src="images/arcata completa 2.PNG" alt="All-on-4 Upper Arch" loading="lazy">
                     </div>
                     <div class="hero-carousel-slide">
-                        <img src="images/arcata completa3.PNG" alt="All-on-6 Lower Arch">
+                        <img src="images/arcata completa3.PNG" alt="All-on-6 Lower Arch" loading="lazy">
                     </div>
                     <!-- Clinic Interior Images -->
                     <div class="hero-carousel-slide">
-                        <img src="images/sanmarco9.PNG" alt="San Marco Dental Clinic - Main Hall">
+                        <img src="images/sanmarco9.PNG" alt="San Marco Dental Clinic - Main Hall" loading="lazy">
                     </div>
                     <div class="hero-carousel-slide">
-                        <img src="images/sanamrco10.PNG" alt="San Marco Dental Clinic - Sterile Corridors">
+                        <img src="images/sanamrco10.PNG" alt="San Marco Dental Clinic - Sterile Corridors" loading="lazy">
                     </div>
                     <div class="hero-carousel-slide">
-                        <img src="images/sanamrco8..PNG" alt="San Marco Dental Clinic - Reception">
+                        <img src="images/sanamrco8..PNG" alt="San Marco Dental Clinic - Reception" loading="lazy">
                     </div>
                     <div class="hero-carousel-slide">
-                        <img src="images/sanmarco12.PNG" alt="San Marco Dental Clinic - Consultation">
+                        <img src="images/sanmarco12.PNG" alt="San Marco Dental Clinic - Consultation" loading="lazy">
                     </div>
                     <div class="hero-carousel-slide">
-                        <img src="images/sanmarco3.PNG" alt="San Marco Dental Clinic - Welcome Area">
+                        <img src="images/sanmarco3.PNG" alt="San Marco Dental Clinic - Welcome Area" loading="lazy">
                     </div>
                     <div class="hero-carousel-slide">
-                        <img src="images/sanamrco.5.PNG" alt="San Marco Dental Clinic - Dental Unit">
+                        <img src="images/sanamrco.5.PNG" alt="San Marco Dental Clinic - Dental Unit" loading="lazy">
                     </div>
                     <div class="hero-carousel-slide">
-                        <img src="images/sanmarcodental2..PNG" alt="San Marco Dental Clinic - Design Atrium">
+                        <img src="images/sanmarcodental2..PNG" alt="San Marco Dental Clinic - Design Atrium" loading="lazy">
                     </div>
                     <div class="hero-carousel-slide">
-                        <img src="images/sanmarco6.PNG" alt="San Marco Dental Clinic - Diagnostics">
+                        <img src="images/sanmarco6.PNG" alt="San Marco Dental Clinic - Diagnostics" loading="lazy">
                     </div>
                     <div class="hero-carousel-slide">
-                        <img src="images/sanamarco7.PNG" alt="San Marco Dental Clinic - Laboratory">
+                        <img src="images/sanamarco7.PNG" alt="San Marco Dental Clinic - Laboratory" loading="lazy">
                     </div>
                     <div class="hero-carousel-slide">
-                        <img src="images/sanmarcodental.1.PNG" alt="San Marco Dental Clinic - Microscope">
+                        <img src="images/sanmarcodental.1.PNG" alt="San Marco Dental Clinic - Microscope" loading="lazy">
                     </div>
                     <div class="hero-carousel-slide">
-                        <img src="images/sanmarco5.PNG" alt="San Marco Dental Clinic - Operating Room">
+                        <img src="images/sanmarco5.PNG" alt="San Marco Dental Clinic - Operating Room" loading="lazy">
                     </div>
                 </div>
                 <div class="hero-carousel-dots" id="heroCarouselDots">
@@ -5801,7 +5886,7 @@
                 </div>
             </div>
 
-            <div class="pricing-card" data-product="corone" onclick="openProductModal('corone')">
+            <div class="pricing-card" data-product="corone" onclick="openProductModal('Crowns')">
                 <img src="images/corona.PNG" alt="Dental Crown" class="pricing-card-image" loading="lazy">
                 <div class="pricing-card-content">
                     <div class="pricing-info">
@@ -5937,7 +6022,7 @@
             <div class="cf-overview-steps">
                 <div class="cf-overview-step cf-overview-step-clickable cf-overview-step-highlight" onclick="openQuoteSimulator()">
                     <div class="cf-overview-icon cf-overview-icon-large">
-                        <img src="images/landing.images.smarco/dentista-paziente.jpg" alt="Calcola Quote">
+                        <img src="images/landing.images.smarco/dentista-paziente.jpg" alt="Calcola Quote" loading="lazy">
                     </div>
                     <div class="cf-overview-number">01</div>
                     <h3>Calculate Your Quote</h3>
@@ -5948,7 +6033,7 @@
                 </div>
                 <div class="cf-overview-step cf-overview-step-clickable cf-overview-step-flight" onclick="openFlightSearch()">
                     <div class="cf-overview-icon cf-overview-icon-large">
-                        <img src="images/tour/Tirana_28.jpg" alt="Voli per Tirana">
+                        <img src="images/tour/Tirana_28.jpg" alt="Voli per Tirana" loading="lazy">
                     </div>
                     <div class="cf-overview-number">02</div>
                     <h3>Search Flights to Tirana</h3>
@@ -5962,7 +6047,7 @@
                         <i class="fas fa-credit-card"></i> BOOK NOW
                     </div>
                     <div class="cf-overview-icon cf-overview-icon-large">
-                        <img src="images/landing.images.smarco/dental-clinic.jpg" alt="Book Your Treatment">
+                        <img src="images/landing.images.smarco/dental-clinic.jpg" alt="Book Your Treatment" loading="lazy">
                     </div>
                     <div class="cf-overview-number">03</div>
                     <h3>Book Your Treatment</h3>
@@ -5976,7 +6061,7 @@
                         <i class="fas fa-star"></i> DISCOVER TIRANA
                     </div>
                     <div class="cf-overview-icon cf-overview-icon-large">
-                        <img src="images/tour/piramide-tirana.jpg" alt="Tirana Experience - Piramide di Tirana">
+                        <img src="images/tour/piramide-tirana.jpg" alt="Tirana Experience - Piramide di Tirana" loading="lazy">
                     </div>
                     <div class="cf-overview-number">04</div>
                     <h3>Your Experience</h3>
@@ -6004,7 +6089,7 @@
             <div class="cf-video-card">
                 <div class="cf-video-container">
                     <video id="cfHeroVideo" poster="images/sanmarco9.PNG" preload="metadata" data-start-time="11">
-                        <source src="images/instagram.videos/ig_video_8_20251025.mp4#t=11" type="video/mp4">
+                        <source src="images/instagram.videos/eng_video_1.mp4#t=11" type="video/mp4">
                     </video>
                     <div class="cf-video-play-btn" onclick="toggleVideoPlay('cfHeroVideo', this)">
                         <i class="fas fa-play"></i>
@@ -6178,8 +6263,8 @@
             <!-- Phase 1 -->
             <div class="cf-phase-card">
                 <div class="cf-phase-video">
-                    <video id="phaseVideo1" poster="images/landing.images.smarco/carousel-sanmarco-2.jpg" preload="metadata">
-                        <source src="images/instagram.videos/ig_video_2_20251201.mp4" type="video/mp4">
+                    <video id="phaseVideo1" poster="images/instagram.videos/eng_video_2.jpg" preload="auto" playsinline webkit-playsinline>
+                        <source src="images/instagram.videos/eng_video_2.mp4" type="video/mp4">
                     </video>
                     <div class="cf-phase-video-play" onclick="toggleVideoPlay('phaseVideo1', this)">
                         <i class="fas fa-play"></i>
@@ -6203,8 +6288,8 @@
             <!-- Phase 2 -->
             <div class="cf-phase-card">
                 <div class="cf-phase-video">
-                    <video id="phaseVideo2" poster="images/landing.images.smarco/carousel-sanmarco-4.jpg" preload="metadata">
-                        <source src="images/instagram.videos/ig_video_20_20251004.mp4" type="video/mp4">
+                    <video id="phaseVideo2" poster="images/instagram.videos/eng_video_3.jpg" preload="auto" playsinline webkit-playsinline>
+                        <source src="images/instagram.videos/eng_video_3.mp4" type="video/mp4">
                     </video>
                     <div class="cf-phase-video-play" onclick="toggleVideoPlay('phaseVideo2', this)">
                         <i class="fas fa-play"></i>
@@ -6228,8 +6313,8 @@
             <!-- Phase 3 -->
             <div class="cf-phase-card">
                 <div class="cf-phase-video">
-                    <video id="phaseVideo3" poster="images/landing.images.smarco/carousel-sanmarco-5.jpg" preload="metadata">
-                        <source src="images/instagram.videos/ig_video_8_20251025.mp4" type="video/mp4">
+                    <video id="phaseVideo3" poster="images/instagram.videos/eng_video_1.jpg" preload="auto" playsinline webkit-playsinline>
+                        <source src="images/instagram.videos/eng_video_1.mp4" type="video/mp4">
                     </video>
                     <div class="cf-phase-video-play" onclick="toggleVideoPlay('phaseVideo3', this)">
                         <i class="fas fa-play"></i>
@@ -6561,7 +6646,7 @@
             <h4 class="footer-title">Treatments</h4>
             <ul class="footer-menu">
                 <li><a href="#" onclick="openProductModal('impianti'); return false;">Fixed Teeth on Implants</a></li>
-                <li><a href="#" onclick="openProductModal('corone'); return false;">Crowns and Dental Veneers</a></li>
+                <li><a href="#" onclick="openProductModal('Crowns'); return false;">Crowns and Dental Veneers</a></li>
                 <li><a href="#" onclick="openProductModal('arcata'); return false;">All-on-4/6 Solution</a></li>
                 <li><a href="#" onclick="openProductModal('impianti'); return false;">Bone Loss Solutions</a></li>
                 <li><a href="#" onclick="openProductModal('impianti'); return false;">Implants with Periodontitis</a></li>
@@ -8033,7 +8118,7 @@ document.getElementById('lead-form').addEventListener('submit', async function(e
             nome: firstName,
             cognome: lastName,
             city: formData.city,
-            phone: formData.phone,
+            telefono: formData.phone,
             email: formData.email || ''
         }]
     };
@@ -9516,74 +9601,74 @@ const clinicProductsData = {
     sanmarco: {
         name: 'San Marco Dental',
         products: [
-            { name: 'Apparecchio Fisso Invisibile', code: 'ORT-003', category: 'Ortodonzia', price: 1600 },
-            { name: 'Apparecchio Fisso Metallico', code: 'ORT-002', category: 'Ortodonzia', price: 1400 },
-            { name: 'Barra in Titanio', code: 'IMP-013', category: 'Implantologia', price: 500 },
-            { name: 'Bite', code: 'ORT-005', category: 'Ortodonzia', price: 50 },
-            { name: 'Cementazione Semplice', code: 'ALT-001', category: 'Altri Servizi', price: 10 },
-            { name: 'Corona in Ceramica', code: 'COR-001', category: 'Corone', price: 130 },
-            { name: 'Corona in Composito', code: 'COR-007', category: 'Corone', price: 100 },
-            { name: 'Corona in Oro', code: 'COR-005', category: 'Corone', price: 500 },
-            { name: 'Corona in Paladium', code: 'COR-004', category: 'Corone', price: 500 },
-            { name: 'Corona in Zirconio', code: 'COR-002', category: 'Corone', price: 180 },
-            { name: 'Corona in Zirconio Full Multilayer', code: 'COR-003', category: 'Corone', price: 200 },
-            { name: 'Corona Provvisoria', code: 'COR-006', category: 'Corone', price: 10 },
-            { name: 'Devitalizzazione', code: 'END-001', category: 'Endodonzia', price: 30 },
-            { name: 'Diagnosi Preliminare / Piano di Cure', code: 'DIA-002', category: 'Diagnostica', price: 60 },
-            { name: 'Estrazione chirurgica dente del giudizio', code: 'EST-006', category: 'Estrazioni', price: 250 },
-            { name: 'Estrazione chirurgica molare', code: 'EST-005', category: 'Estrazioni', price: 250 },
-            { name: 'Estrazione dente retinato', code: 'EST-007', category: 'Estrazioni', price: 200 },
-            { name: 'Estrazione semplice dente', code: 'EST-001', category: 'Estrazioni', price: 50 },
-            { name: 'Estrazione semplice dente da latte', code: 'EST-002', category: 'Estrazioni', price: 30 },
-            { name: 'Estrazione semplice molare', code: 'EST-004', category: 'Estrazioni', price: 150 },
-            { name: 'Estrazione semplice radice', code: 'EST-003', category: 'Estrazioni', price: 50 },
-            { name: 'Faccette Emax', code: 'EST-102', category: 'Estetica Dentale', price: 300 },
-            { name: 'Faccette Composito', code: 'EST-101', category: 'Estetica Dentale', price: 100 },
-            { name: 'Impianto Dentale in Titanio', code: 'IMP-002', category: 'Implantologia', price: 350 },
-            { name: 'Impianto Dentale JD Evolution', code: 'IMP-006', category: 'Implantologia', price: 350 },
-            { name: 'Impianto Dentale Megagen', code: 'IMP-001', category: 'Implantologia', price: 500 },
-            { name: 'Impianto Dentale Osstem-Toplan', code: 'IMP-005', category: 'Implantologia', price: 350 },
-            { name: 'Impianto Dentale Pterigoideo', code: 'IMP-003', category: 'Implantologia', price: 600 },
-            { name: 'Impianto Dentale Tecom', code: 'IMP-007', category: 'Implantologia', price: 400 },
-            { name: 'Impianto Dentale Zigomatico', code: 'IMP-004', category: 'Implantologia', price: 600 },
-            { name: 'Innesto Osseo', code: 'IMP-012', category: 'Implantologia', price: 300 },
-            { name: 'Mascherina Provvisoria', code: 'PRO-007', category: 'Protesi', price: 100 },
-            { name: 'Mascherine Invisibili', code: 'ORT-001', category: 'Ortodonzia', price: 2200 },
-            { name: 'Mini Rialzo del Seno Mascellare', code: 'IMP-011', category: 'Implantologia', price: 300 },
-            { name: 'Moncone', code: 'IMP-009', category: 'Implantologia', price: 80 },
-            { name: 'Moncone Universale', code: 'IMP-008', category: 'Implantologia', price: 100 },
-            { name: 'Ortopanoramica', code: 'DIA-001', category: 'Diagnostica', price: 25 },
-            { name: 'Otturazione Canali', code: 'OTT-008', category: 'Otturazioni', price: 30 },
-            { name: 'Otturazione I', code: 'OTT-001', category: 'Otturazioni', price: 30 },
-            { name: 'Otturazione II', code: 'OTT-002', category: 'Otturazioni', price: 40 },
-            { name: 'Otturazione II Profonda', code: 'OTT-003', category: 'Otturazioni', price: 40 },
-            { name: 'Otturazione III con infezione', code: 'OTT-006', category: 'Otturazioni', price: 100 },
-            { name: 'Otturazione III Frontale', code: 'OTT-004', category: 'Otturazioni', price: 50 },
-            { name: 'Otturazione III Posteriore', code: 'OTT-005', category: 'Otturazioni', price: 50 },
-            { name: 'Otturazione IV', code: 'OTT-007', category: 'Otturazioni', price: 100 },
-            { name: 'Ponte provvisorio', code: 'PRO-006', category: 'Protesi', price: 100 },
-            { name: 'Protesi Mobile Totale', code: 'PRO-001', category: 'Protesi', price: 800 },
-            { name: 'Protesi parziale scheletrata', code: 'PRO-004', category: 'Protesi', price: 300 },
-            { name: 'Protesi parziale scheletrata con attachment', code: 'PRO-005', category: 'Protesi', price: 500 },
-            { name: 'Protesi parziale semplice', code: 'PRO-003', category: 'Protesi', price: 150 },
-            { name: 'Protesi Provvisoria Fissa', code: 'PRO-002', category: 'Protesi', price: 150 },
+            { name: 'Invisible Fixed Braces', code: 'ORT-003', category: 'Orthodontics', price: 1600 },
+            { name: 'Metal Fixed Braces', code: 'ORT-002', category: 'Orthodontics', price: 1400 },
+            { name: 'Titanium Bar', code: 'IMP-013', category: 'Implantology', price: 500 },
+            { name: 'Bite', code: 'ORT-005', category: 'Orthodontics', price: 50 },
+            { name: 'Simple Cementation', code: 'ALT-001', category: 'Other Services', price: 10 },
+            { name: 'Ceramic Crown', code: 'COR-001', category: 'Crowns', price: 130 },
+            { name: 'Composite Crown', code: 'COR-007', category: 'Crowns', price: 100 },
+            { name: 'Gold Crown', code: 'COR-005', category: 'Crowns', price: 500 },
+            { name: 'Palladium Crown', code: 'COR-004', category: 'Crowns', price: 500 },
+            { name: 'Zirconia Crown', code: 'COR-002', category: 'Crowns', price: 180 },
+            { name: 'Full Multilayer Zirconia Crown', code: 'COR-003', category: 'Crowns', price: 200 },
+            { name: 'Temporary Crown', code: 'COR-006', category: 'Crowns', price: 10 },
+            { name: 'Root Canal Treatment', code: 'END-001', category: 'Endodontics', price: 30 },
+            { name: 'Preliminary Diagnosis / Treatment Plan', code: 'DIA-002', category: 'Diagnostics', price: 60 },
+            { name: 'Surgical Wisdom Tooth Extraction', code: 'EST-006', category: 'Extractions', price: 250 },
+            { name: 'Surgical Molar Extraction', code: 'EST-005', category: 'Extractions', price: 250 },
+            { name: 'Impacted Tooth Extraction', code: 'EST-007', category: 'Extractions', price: 200 },
+            { name: 'Simple Tooth Extraction', code: 'EST-001', category: 'Extractions', price: 50 },
+            { name: 'Simple Baby Tooth Extraction', code: 'EST-002', category: 'Extractions', price: 30 },
+            { name: 'Simple Molar Extraction', code: 'EST-004', category: 'Extractions', price: 150 },
+            { name: 'Simple Root Extraction', code: 'EST-003', category: 'Extractions', price: 50 },
+            { name: 'Emax Veneers', code: 'EST-102', category: 'Dental Aesthetics', price: 300 },
+            { name: 'Composite Veneers', code: 'EST-101', category: 'Dental Aesthetics', price: 100 },
+            { name: 'Titanium Dental Implant', code: 'IMP-002', category: 'Implantology', price: 350 },
+            { name: 'JD Evolution Dental Implant', code: 'IMP-006', category: 'Implantology', price: 350 },
+            { name: 'Megagen Dental Implant', code: 'IMP-001', category: 'Implantology', price: 500 },
+            { name: 'Osstem-Toplan Dental Implant', code: 'IMP-005', category: 'Implantology', price: 350 },
+            { name: 'Pterygoid Dental Implant', code: 'IMP-003', category: 'Implantology', price: 600 },
+            { name: 'Tecom Dental Implant', code: 'IMP-007', category: 'Implantology', price: 400 },
+            { name: 'Zygomatic Dental Implant', code: 'IMP-004', category: 'Implantology', price: 600 },
+            { name: 'Bone Graft', code: 'IMP-012', category: 'Implantology', price: 300 },
+            { name: 'Temporary Aligner', code: 'PRO-007', category: 'Prosthetics', price: 100 },
+            { name: 'Invisible Aligners', code: 'ORT-001', category: 'Orthodontics', price: 2200 },
+            { name: 'Mini Sinus Lift', code: 'IMP-011', category: 'Implantology', price: 300 },
+            { name: 'Abutment', code: 'IMP-009', category: 'Implantology', price: 80 },
+            { name: 'Universal Abutment', code: 'IMP-008', category: 'Implantology', price: 100 },
+            { name: 'Panoramic X-Ray', code: 'DIA-001', category: 'Diagnostics', price: 25 },
+            { name: 'Root Canal Filling', code: 'OTT-008', category: 'Fillings', price: 30 },
+            { name: 'Class I Filling', code: 'OTT-001', category: 'Fillings', price: 30 },
+            { name: 'Class I FillingI', code: 'OTT-002', category: 'Fillings', price: 40 },
+            { name: 'Class I FillingI Profonda', code: 'OTT-003', category: 'Fillings', price: 40 },
+            { name: 'Class I FillingII con infezione', code: 'OTT-006', category: 'Fillings', price: 100 },
+            { name: 'Class I FillingII Frontale', code: 'OTT-004', category: 'Fillings', price: 50 },
+            { name: 'Class I FillingII Posteriore', code: 'OTT-005', category: 'Fillings', price: 50 },
+            { name: 'Class I FillingV', code: 'OTT-007', category: 'Fillings', price: 100 },
+            { name: 'Temporary Bridge', code: 'PRO-006', category: 'Prosthetics', price: 100 },
+            { name: 'Full Denture', code: 'PRO-001', category: 'Prosthetics', price: 800 },
+            { name: 'Partial Skeletal Denture', code: 'PRO-004', category: 'Prosthetics', price: 300 },
+            { name: 'Partial Skeletal Denture with Attachment', code: 'PRO-005', category: 'Prosthetics', price: 500 },
+            { name: 'Simple Partial Denture', code: 'PRO-003', category: 'Prosthetics', price: 150 },
+            { name: 'Fixed Temporary Prosthesis', code: 'PRO-002', category: 'Prosthetics', price: 150 },
             { name: 'Dental Cleaning', code: 'IG-001', category: 'Dental Hygiene', price: 30 },
             { name: 'Dental Cleaning con Bicarbonato', code: 'IG-002', category: 'Dental Hygiene', price: 50 },
             { name: 'Dental Cleaning per Bambini', code: 'IG-004', category: 'Dental Hygiene', price: 30 },
             { name: 'Dental Cleaning Profonda', code: 'IG-003', category: 'Dental Hygiene', price: 50 },
-            { name: 'Resezione apicale', code: 'EST-008', category: 'Estrazioni', price: 200 },
-            { name: 'Rialzo del Seno Mascellare', code: 'IMP-010', category: 'Implantologia', price: 500 },
-            { name: 'Ricostruzione con Vite', code: 'RIC-003', category: 'Ricostruzioni', price: 50 },
-            { name: 'Ricostruzione con Vite + Otturazione III', code: 'RIC-002', category: 'Ricostruzioni', price: 70 },
-            { name: 'Ricostruzione per ponte', code: 'RIC-001', category: 'Ricostruzioni', price: 40 },
-            { name: 'Rimozione Ciste', code: 'CHI-002', category: 'Chirurgia', price: 300 },
-            { name: 'Ritiro Dente Canino', code: 'ORT-004', category: 'Ortodonzia', price: 150 },
-            { name: 'Ritrattamento Canalare', code: 'END-002', category: 'Endodonzia', price: 70 },
-            { name: 'Whitening Dentale', code: 'IG-005', category: 'Dental Hygiene', price: 250 },
-            { name: 'Sedazione', code: 'CHI-001', category: 'Chirurgia', price: 250 },
-            { name: 'Sigillante', code: 'OTT-009', category: 'Otturazioni', price: 20 },
-            { name: 'TAC 3D', code: 'DIA-003', category: 'Diagnostica', price: 100 },
-            { name: 'Visita Ortodontica Mascherine Invisibili', code: 'DIA-004', category: 'Diagnostica', price: 200 }
+            { name: 'Apicoectomy', code: 'EST-008', category: 'Extractions', price: 200 },
+            { name: 'Sinus Lift', code: 'IMP-010', category: 'Implantology', price: 500 },
+            { name: 'Reconstruction with Screw', code: 'RIC-003', category: 'Reconstructions', price: 50 },
+            { name: 'Reconstruction with Screw + Class I FillingII', code: 'RIC-002', category: 'Reconstructions', price: 70 },
+            { name: 'Bridge Reconstruction', code: 'RIC-001', category: 'Reconstructions', price: 40 },
+            { name: 'Cyst Removal', code: 'CHI-002', category: 'Surgery', price: 300 },
+            { name: 'Canine Tooth Retraction', code: 'ORT-004', category: 'Orthodontics', price: 150 },
+            { name: 'Root Canal Retreatment', code: 'END-002', category: 'Endodontics', price: 70 },
+            { name: 'Teeth Whitening', code: 'IG-005', category: 'Dental Hygiene', price: 250 },
+            { name: 'Sedation', code: 'CHI-001', category: 'Surgery', price: 250 },
+            { name: 'Sealant', code: 'OTT-009', category: 'Fillings', price: 20 },
+            { name: '3D CT Scan', code: 'DIA-003', category: 'Diagnostics', price: 100 },
+            { name: 'Visita Ortodontica Invisible Aligners', code: 'DIA-004', category: 'Diagnostics', price: 200 }
         ]
     }
 };
@@ -14749,8 +14834,7 @@ console.log('✅ Booking Modal initialized');
                 <h3 class="place-section-title"><i class="fas fa-landmark"></i> Main Attractions</h3>
                 <div class="place-grid">
                     <div class="place-card" onclick="openGoogleSearch('Piazza Skanderbeg Tirana Albania')">
-                        <div class="place-card-image" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-landmark" style="font-size: 3rem; color: white; opacity: 0.8;"></i>
+                        <div class="place-card-image" style="background: url('images/tour/skanderbeg-square-real.jpg') center/cover no-repeat;">
                             <div class="place-card-rating"><i class="fas fa-star"></i> 4.7</div>
                         </div>
                         <div class="place-card-content">
@@ -14775,8 +14859,7 @@ console.log('✅ Booking Modal initialized');
                     </div>
 
                     <div class="place-card" onclick="openGoogleSearch('BunkArt Museum Tirana Albania')">
-                        <div class="place-card-image" style="background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%); display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-dungeon" style="font-size: 3rem; color: white; opacity: 0.8;"></i>
+                        <div class="place-card-image" style="background: url('images/tour/bunkart-real.jpg') center/cover no-repeat;">
                             <div class="place-card-rating"><i class="fas fa-star"></i> 4.8</div>
                         </div>
                         <div class="place-card-content">
@@ -14801,8 +14884,7 @@ console.log('✅ Booking Modal initialized');
                     </div>
 
                     <div class="place-card" onclick="openGoogleSearch('Monte Dajti Teleferica Tirana Albania')">
-                        <div class="place-card-image" style="background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-mountain" style="font-size: 3rem; color: white; opacity: 0.8;"></i>
+                        <div class="place-card-image" style="background: url('images/tour/dajti-real.jpg') center/cover no-repeat;">
                             <div class="place-card-rating"><i class="fas fa-star"></i> 4.6</div>
                         </div>
                         <div class="place-card-content">
@@ -14827,8 +14909,7 @@ console.log('✅ Booking Modal initialized');
                     </div>
 
                     <div class="place-card" onclick="openGoogleSearch('Blloku District Tirana nightlife')">
-                        <div class="place-card-image" style="background: linear-gradient(135deg, #fa709a 0%, #fee140 100%); display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-cocktail" style="font-size: 3rem; color: white; opacity: 0.8;"></i>
+                        <div class="place-card-image" style="background: url('images/tour/blloku-real.jpg') center/cover no-repeat;">
                             <div class="place-card-rating"><i class="fas fa-star"></i> 4.5</div>
                         </div>
                         <div class="place-card-content">
@@ -14858,8 +14939,7 @@ console.log('✅ Booking Modal initialized');
                 <h3 class="place-section-title"><i class="fas fa-shopping-bag"></i> Shopping & Leisure</h3>
                 <div class="place-grid">
                     <div class="place-card" onclick="openGoogleSearch('TEG Tirana East Gate shopping mall')">
-                        <div class="place-card-image" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%); display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-shopping-bag" style="font-size: 3rem; color: white; opacity: 0.8;"></i>
+                        <div class="place-card-image" style="background: url('images/tour/teg-real.jpg') center/cover no-repeat;">
                             <div class="place-card-rating"><i class="fas fa-star"></i> 4.4</div>
                         </div>
                         <div class="place-card-content">
@@ -14884,8 +14964,7 @@ console.log('✅ Booking Modal initialized');
                     </div>
 
                     <div class="place-card" onclick="openGoogleSearch('Grand Park Tirana Lake artificial')">
-                        <div class="place-card-image" style="background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%); display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-tree" style="font-size: 3rem; color: white; opacity: 0.8;"></i>
+                        <div class="place-card-image" style="background: url('images/tour/grand-park-real.jpg') center/cover no-repeat;">
                             <div class="place-card-rating"><i class="fas fa-star"></i> 4.7</div>
                         </div>
                         <div class="place-card-content">
@@ -14910,8 +14989,7 @@ console.log('✅ Booking Modal initialized');
                     </div>
 
                     <div class="place-card" onclick="openGoogleSearch('National History Museum Tirana Albania')">
-                        <div class="place-card-image" style="background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%); display: flex; align-items: center; justify-content: center;">
-                            <i class="fas fa-university" style="font-size: 3rem; color: white; opacity: 0.8;"></i>
+                        <div class="place-card-image" style="background: url('images/tour/national-museum-real.jpg') center/cover no-repeat;">
                             <div class="place-card-rating"><i class="fas fa-star"></i> 4.5</div>
                         </div>
                         <div class="place-card-content">
@@ -14944,6 +15022,7 @@ console.log('✅ Booking Modal initialized');
                 <h3 class="place-section-title"><i class="fas fa-coffee"></i> Breakfast (€3-15 per person)</h3>
                 <div class="restaurant-grid">
                     <div class="restaurant-card" onclick="openGoogleSearch('Mon Cheri pasticceria Tirana')">
+                        <div class="restaurant-image" style="background: url('images/restaurants/moncheri-real.jpg') center/cover no-repeat; height: 120px; border-radius: 8px 8px 0 0;"></div>
                         <div class="restaurant-header">
                             <div class="restaurant-icon breakfast"><i class="fas fa-sun"></i></div>
                             <div class="restaurant-info">
@@ -14973,6 +15052,7 @@ console.log('✅ Booking Modal initialized');
                     </div>
 
                     <div class="restaurant-card" onclick="openGoogleSearch('Sophie Cafe Tirana brunch')">
+                        <div class="restaurant-image" style="background: url('images/restaurants/sophie-real.jpg') center/cover no-repeat; height: 120px; border-radius: 8px 8px 0 0;"></div>
                         <div class="restaurant-header">
                             <div class="restaurant-icon breakfast"><i class="fas fa-sun"></i></div>
                             <div class="restaurant-info">
@@ -15002,6 +15082,7 @@ console.log('✅ Booking Modal initialized');
                     </div>
 
                     <div class="restaurant-card" onclick="openGoogleSearch('Komiteti Kafe Muzeum Tirana')">
+                        <div class="restaurant-image" style="background: url('images/restaurants/komiteti-real.jpg') center/cover no-repeat; height: 120px; border-radius: 8px 8px 0 0;"></div>
                         <div class="restaurant-header">
                             <div class="restaurant-icon breakfast"><i class="fas fa-sun"></i></div>
                             <div class="restaurant-info">
@@ -15036,6 +15117,7 @@ console.log('✅ Booking Modal initialized');
                 <h3 class="place-section-title"><i class="fas fa-hamburger"></i> Lunch (€8-30 per person)</h3>
                 <div class="restaurant-grid">
                     <div class="restaurant-card" onclick="openGoogleSearch('Oda Restaurant Tirana traditional Albanian')">
+                        <div class="restaurant-image" style="background: url('images/restaurants/oda-real.jpg') center/cover no-repeat; height: 120px; border-radius: 8px 8px 0 0;"></div>
                         <div class="restaurant-header">
                             <div class="restaurant-icon lunch"><i class="fas fa-leaf"></i></div>
                             <div class="restaurant-info">
@@ -15065,6 +15147,7 @@ console.log('✅ Booking Modal initialized');
                     </div>
 
                     <div class="restaurant-card" onclick="openGoogleSearch('Era Restaurant Tirana modern Albanian')">
+                        <div class="restaurant-image" style="background: url('images/restaurants/era-real.jpg') center/cover no-repeat; height: 120px; border-radius: 8px 8px 0 0;"></div>
                         <div class="restaurant-header">
                             <div class="restaurant-icon lunch"><i class="fas fa-leaf"></i></div>
                             <div class="restaurant-info">
@@ -15094,6 +15177,7 @@ console.log('✅ Booking Modal initialized');
                     </div>
 
                     <div class="restaurant-card" onclick="openGoogleSearch('Zgara Korcare Tirana BBQ')">
+                        <div class="restaurant-image" style="background: url('images/restaurants/zgara-real.jpg') center/cover no-repeat; height: 120px; border-radius: 8px 8px 0 0;"></div>
                         <div class="restaurant-header">
                             <div class="restaurant-icon lunch"><i class="fas fa-leaf"></i></div>
                             <div class="restaurant-info">
@@ -15128,6 +15212,7 @@ console.log('✅ Booking Modal initialized');
                 <h3 class="place-section-title"><i class="fas fa-moon"></i> Dinner (€15-60 per person)</h3>
                 <div class="restaurant-grid">
                     <div class="restaurant-card" onclick="openGoogleSearch('Mullixhiu Restaurant Tirana fine dining')">
+                        <div class="restaurant-image" style="background: url('images/restaurants/mullixhiu-real.jpg') center/cover no-repeat; height: 120px; border-radius: 8px 8px 0 0;"></div>
                         <div class="restaurant-header">
                             <div class="restaurant-icon dinner"><i class="fas fa-wine-glass-alt"></i></div>
                             <div class="restaurant-info">
@@ -15157,6 +15242,7 @@ console.log('✅ Booking Modal initialized');
                     </div>
 
                     <div class="restaurant-card" onclick="openGoogleSearch('Marche Restaurant Tirana rooftop')">
+                        <div class="restaurant-image" style="background: url('images/restaurants/marche-real.jpg') center/cover no-repeat; height: 120px; border-radius: 8px 8px 0 0;"></div>
                         <div class="restaurant-header">
                             <div class="restaurant-icon dinner"><i class="fas fa-wine-glass-alt"></i></div>
                             <div class="restaurant-info">
@@ -15186,6 +15272,7 @@ console.log('✅ Booking Modal initialized');
                     </div>
 
                     <div class="restaurant-card" onclick="openGoogleSearch('Juvenilja Restaurant Tirana seafood')">
+                        <div class="restaurant-image" style="background: url('images/restaurants/juvenilja-real.jpg') center/cover no-repeat; height: 120px; border-radius: 8px 8px 0 0;"></div>
                         <div class="restaurant-header">
                             <div class="restaurant-icon dinner"><i class="fas fa-wine-glass-alt"></i></div>
                             <div class="restaurant-info">
@@ -15643,3 +15730,5 @@ console.log('✅ Tirana Experience Modal initialized');
 
 </body>
 </html>
+
+
