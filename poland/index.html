@@ -6511,7 +6511,7 @@
             <input type="hidden" id="gclid" name="gclid" value="">
             <input type="hidden" id="fbclid" name="fbclid" value="">
             <input type="hidden" id="source" name="source" value="landing-page-mobile">
-            <input type="hidden" id="paese_provenienza" name="paese_provenienza" value="IT">
+            <input type="hidden" id="paese_provenienza" name="paese_provenienza" value="PL">
 
             <div class="form-group">
                 <label for="first_name">Imię *</label>
@@ -8166,7 +8166,7 @@ function trackTelefonClick() {
     if (typeof gtag === 'function') {
         gtag('event', 'click_phone', {
             'event_category': 'Contact',
-            'event_label': 'Telefon Click',
+            'event_label': 'Phone Click',
             'phone_number': '+37254450188',
             'value': 0.5,
             'currency': 'EUR'
@@ -8691,7 +8691,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     'link_url': this.href
                 });
             }
-            console.log('✅ Google Recenzje click tracked');
+            console.log('✅ Google Reviews click tracked');
         });
     });
 
@@ -10833,7 +10833,7 @@ function openFlightSearch() {
     if (typeof fbq === 'function') {
         fbq('track', 'ViewContent', {
             content_name: 'Flight Search',
-            content_category: 'Krok 2 - Travel Planning',
+            content_category: 'Step 2 - Travel Planning',
             departure_city: flightSearchState.departureMiasto
         });
     }
@@ -10884,7 +10884,7 @@ function selectDepartureMiasto(btn) {
     if (typeof gtag === 'function') {
         gtag('event', 'element_click', {
             'event_category': 'Flight Search',
-            'event_label': 'Miasto Selection',
+            'event_label': 'City Selection',
             'city_code': btn.dataset.city,
             'city_name': btn.dataset.name
         });
@@ -12686,7 +12686,7 @@ async function sendPartialLeadToCRM() {
     if (typeof gtag === 'function') {
         gtag('event', 'generate_lead', {
             'event_category': 'Booking',
-            'event_label': 'Partial Lead - Krok 2 Completed',
+            'event_label': 'Partial Lead - Step 2 Completed',
             'value': 50,
             'currency': 'EUR',
             'lead_source': 'booking_modal',
@@ -12779,7 +12779,7 @@ async function sendPartialLeadToCRM() {
             }]
         };
 
-        console.log('📤 Sending PARTIAL lead to CRM (Krok 2 completed):', partialPayload);
+        console.log('📤 Sending PARTIAL lead to CRM (Step 2 completed):', partialPayload);
 
         const response = await fetch('https://crm.clinicadentalealbania.it/api/v1/leads/import', {
             method: 'POST',
@@ -15379,7 +15379,7 @@ function openGoogleReviews(query) {
     if (typeof gtag === 'function') {
         gtag('event', 'outbound_click', {
             'event_category': 'Tirana Experience',
-            'event_label': 'Google Recenzje',
+            'event_label': 'Google Reviews',
             'search_query': query
         });
     }
@@ -15407,7 +15407,7 @@ function addToTrip(name, type, btn) {
     if (typeof gtag === 'function') {
         gtag('event', 'element_click', {
             'event_category': 'Tirana Experience',
-            'event_label': existingIndex >= 0 ? 'Usuń z Planu' : 'Add to Trip',
+            'event_label': existingIndex >= 0 ? 'Remove from Trip' : 'Add to Trip',
             'place_name': name,
             'place_type': type
         });

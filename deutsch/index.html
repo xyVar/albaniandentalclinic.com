@@ -6690,7 +6690,7 @@
             <input type="hidden" id="gclid" name="gclid" value="">
             <input type="hidden" id="fbclid" name="fbclid" value="">
             <input type="hidden" id="source" name="source" value="landing-page-mobile">
-            <input type="hidden" id="paese_provenienza" name="paese_provenienza" value="IT">
+            <input type="hidden" id="paese_provenienza" name="paese_provenienza" value="DE">
 
             <div class="form-group">
                 <label for="first_name">Vorname *</label>
@@ -7862,7 +7862,7 @@ function trackPopupOpen() {
     // Meta Pixel ViewContent
     if (typeof fbq === 'function') {
         fbq('track', 'ViewContent', {
-            content_name: 'Angebot Form',
+            content_name: 'Quote Form',
             content_category: 'Form Popup'
         });
         console.log('✅ Meta ViewContent event fired');
@@ -7997,7 +7997,7 @@ document.getElementById('lead-form').addEventListener('submit', async function(e
     // 3. Fire Meta Pixel Event (when configured)
     if (typeof fbq === 'function') {
         fbq('track', 'Lead', {
-            content_name: 'Angebot Dentale',
+            content_name: 'Dental Quote',
             content_category: 'Dental Tourism'
         });
         console.log('✅ Meta Lead event fired');
@@ -8263,10 +8263,10 @@ window.addEventListener('scroll', () => {
         setTimeout(() => {
             switch(openParam) {
                 case 'preventivo':
-                    // Auto-open Angebot Simulator
+                    // Auto-open Quote Simulator
                     if (typeof openAngebotSimulator === 'function') {
                         openAngebotSimulator();
-                        console.log('🎯 Auto-opened Angebot Simulator from Google Ads');
+                        console.log('🎯 Auto-opened Quote Simulator from Google Ads');
                     }
                     break;
                 case 'booking':
@@ -8302,12 +8302,12 @@ window.addEventListener('scroll', () => {
     }
 })();
 
-// Telefon Click Tracking - GA4 event only (import to Google Ads from GA4)
+// Phone Click Tracking - GA4 event only (import to Google Ads from GA4)
 function trackTelefonClick() {
     if (typeof gtag === 'function') {
         gtag('event', 'click_phone', {
             'event_category': 'Contact',
-            'event_label': 'Telefon Click',
+            'event_label': 'Phone Click',
             'phone_number': '+37254450188',
             'value': 0.5,
             'currency': 'EUR'
@@ -9684,7 +9684,7 @@ function openAngebotSimulator() {
     if (typeof gtag === 'function') {
         gtag('event', 'popup_open', {
             'event_category': 'Modal',
-            'event_label': 'Angebot Simulator',
+            'event_label': 'Quote Simulator',
             'modal_name': 'preventivo_simulator',
             'step': 1
         });
@@ -9693,12 +9693,12 @@ function openAngebotSimulator() {
     // Meta Pixel - ViewContent
     if (typeof fbq === 'function') {
         fbq('track', 'ViewContent', {
-            content_name: 'Angebot Simulator',
+            content_name: 'Quote Simulator',
             content_category: 'Schritt 1 - Calculator'
         });
     }
 
-    console.log('📊 Tracking: popup_open - Angebot Simulator');
+    console.log('📊 Tracking: popup_open - Quote Simulator');
 }
 
 function closeAngebotSimulator() {
@@ -9712,7 +9712,7 @@ function closeAngebotSimulator() {
                           simulatorState.seconda.reduce((sum, item) => sum + (item.product.price * item.quantity), 0);
         gtag('event', 'popup_close', {
             'event_category': 'Modal',
-            'event_label': 'Angebot Simulator',
+            'event_label': 'Quote Simulator',
             'modal_name': 'preventivo_simulator',
             'step': 1,
             'items_added': simulatorState.prima.length + simulatorState.seconda.length,
@@ -9720,7 +9720,7 @@ function closeAngebotSimulator() {
         });
     }
 
-    console.log('📊 Tracking: popup_close - Angebot Simulator');
+    console.log('📊 Tracking: popup_close - Quote Simulator');
 }
 
 // ========================================
@@ -9806,7 +9806,7 @@ function addProduct(session, productCode) {
     // GA4 Tracking
     if (typeof gtag === 'function') {
         gtag('event', 'preventivo_add_item', {
-            'event_category': 'Angebot Simulator',
+            'event_category': 'Quote Simulator',
             'session': session,
             'product_name': product.name,
             'product_code': product.code,
@@ -10065,7 +10065,7 @@ function generatePDF() {
     // GA4 Tracking - PDF Generated (conversion event)
     if (typeof gtag === 'function') {
         gtag('event', 'preventivo_pdf_generated', {
-            'event_category': 'Angebot Simulator',
+            'event_category': 'Quote Simulator',
             'event_label': 'PDF Downloaded',
             'clinic': simulatorState.selectedClinic,
             'total': grandTotal,
@@ -10077,7 +10077,7 @@ function generatePDF() {
 
         // GA4 generate_lead - will be imported to Google Ads
         gtag('event', 'generate_lead', {
-            'event_category': 'Angebot Simulator',
+            'event_category': 'Quote Simulator',
             'event_label': 'PDF Downloaded',
             'value': grandTotal,
             'currency': 'EUR'
@@ -10087,7 +10087,7 @@ function generatePDF() {
     // Meta Pixel - Lead event (PDF download is a lead indicator)
     if (typeof fbq === 'function') {
         fbq('track', 'Lead', {
-            content_name: 'Angebot PDF Generated',
+            content_name: 'Quote PDF Generated',
             content_category: 'Schritt 1 - Calculator',
             value: grandTotal,
             currency: 'EUR'
@@ -10125,7 +10125,7 @@ renderSessionItems('prima');
 renderSessionItems('seconda');
 updateTotals();
 
-console.log('✅ Angebot Simulator initialized');
+console.log('✅ Quote Simulator initialized');
 </script>
 
 <!-- ========================================
@@ -11061,7 +11061,7 @@ function selectDepartureStadt(btn) {
     if (typeof gtag === 'function') {
         gtag('event', 'element_click', {
             'event_category': 'Flight Search',
-            'event_label': 'Stadt Selection',
+            'event_label': 'City Selection',
             'city_code': btn.dataset.city,
             'city_name': btn.dataset.name
         });
@@ -12863,7 +12863,7 @@ async function sendPartialLeadToCRM() {
     if (typeof gtag === 'function') {
         gtag('event', 'generate_lead', {
             'event_category': 'Booking',
-            'event_label': 'Partial Lead - Schritt 2 Completed',
+            'event_label': 'Partial Lead - Step 2 Completed',
             'value': 50,
             'currency': 'EUR',
             'lead_source': 'booking_modal',
@@ -13870,7 +13870,7 @@ async function submitBooking() {
 
         // Also track Purchase event for booking
         fbq('track', 'Purchase', {
-            content_name: 'Dental Behandlung Booking',
+            content_name: 'Dental Treatment Booking',
             content_category: 'Booking',
             value: 100,
             currency: 'EUR',

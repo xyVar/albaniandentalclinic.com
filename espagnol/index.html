@@ -6511,7 +6511,7 @@
             <input type="hidden" id="gclid" name="gclid" value="">
             <input type="hidden" id="fbclid" name="fbclid" value="">
             <input type="hidden" id="source" name="source" value="landing-page-mobile">
-            <input type="hidden" id="paese_provenienza" name="paese_provenienza" value="IT">
+            <input type="hidden" id="paese_provenienza" name="paese_provenienza" value="ES">
 
             <div class="form-group">
                 <label for="first_name">Nombre *</label>
@@ -8167,7 +8167,7 @@ function trackPhoneClick() {
     if (typeof gtag === 'function') {
         gtag('event', 'click_phone', {
             'event_category': 'Contact',
-            'event_label': 'Teléfono Click',
+            'event_label': 'Phone Click',
             'phone_number': '+37254450188',
             'value': 0.5,
             'currency': 'EUR'
@@ -8450,7 +8450,7 @@ function trackCTAClick(ctaName, ctaLocation) {
         pixel_ratio: window.devicePixelRatio,
 
         // Device Type
-        device_type: /Mobile|Android|iTeléfono|iPad/.test(navigator.userAgent) ? 'mobile' : 'desktop',
+        device_type: /Mobile|Android|iPhone|iPad/.test(navigator.userAgent) ? 'mobile' : 'desktop',
         is_touch: 'ontouchstart' in window,
 
         // Browser
@@ -8471,7 +8471,7 @@ function trackCTAClick(ctaName, ctaLocation) {
             if (ua.includes('Mac')) return 'MacOS';
             if (ua.includes('Linux')) return 'Linux';
             if (ua.includes('Android')) return 'Android';
-            if (ua.includes('iOS') || ua.includes('iTeléfono') || ua.includes('iPad')) return 'iOS';
+            if (ua.includes('iOS') || ua.includes('iPhone') || ua.includes('iPad')) return 'iOS';
             return 'Other';
         })(),
 
@@ -10881,7 +10881,7 @@ function selectDepartureCiudad(btn) {
     if (typeof gtag === 'function') {
         gtag('event', 'element_click', {
             'event_category': 'Flight Search',
-            'event_label': 'Ciudad Selection',
+            'event_label': 'City Selection',
             'city_code': btn.dataset.city,
             'city_name': btn.dataset.name
         });
@@ -13094,7 +13094,7 @@ async function sendBookingConfirmationEmail(bookingData) {
         bookingId: bookingData.bookingId,
         customerName: bookingData.name,
         customerEmail: bookingData.email,
-        customerTeléfono: bookingData.phone,
+        customerPhone: bookingData.phone,
         paymentMethod: bookingData.paymentMethod,
         amount: 100,
         currency: 'EUR',
@@ -15174,7 +15174,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <a href="https://wa.me/37254450188" target="_blank" class="support-contact-btn whatsapp" onclick="trackTiranaWhatsApp()">
                     <i class="fab fa-whatsapp"></i> Contact on WhatsApp
                 </a>
-                <a href="tel:+37254450188" class="support-contact-btn phone" onclick="trackTiranaTeléfono()">
+                <a href="tel:+37254450188" class="support-contact-btn phone" onclick="trackTiranaPhone()">
                     <i class="fas fa-phone"></i> Call Now
                 </a>
             </div>
@@ -15495,7 +15495,7 @@ function trackTiranaWhatsApp() {
     }
 }
 
-function trackTiranaTeléfono() {
+function trackTiranaPhone() {
     if (typeof gtag === 'function') {
         gtag('event', 'click_phone', {
             'event_category': 'Tirana Experience',
