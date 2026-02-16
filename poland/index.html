@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="San Marco Dental - Certyfikowana klinika dentystyczna w Albanii. Zaoszczędź do 75% na implantach zębowych, koronach i pełnym łuku. 4.8 gwiazdek Google.">
+    <meta name="keywords" content="implanty zębowe Albania, dentysta Albania, turystyka dentystyczna Albania, tanie implanty zębowe, implanty zębowe za granicą, klinika dentystyczna Tirana, korony zębowe Albania, All-on-4 Albania, San Marco Dental, oszczędności dentysta">
     <meta name="theme-color" content="#1a365d">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="mobile-web-app-capable" content="yes">
@@ -303,10 +304,10 @@
 
         /* Logo Styling - San Marco Dental */
         .navbar-logo {
-            display: flex;
-            align-items: center;
-            gap: 4px;
-            text-decoration: none;
+            display: flex !important;
+            align-items: center !important;
+            gap: 10px;
+            text-decoration: none !important;
         }
 
         .navbar-logo img {
@@ -813,8 +814,8 @@
 
             .hero .container {
                 display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 60px;
+                grid-template-columns: 1fr 1.2fr;
+                gap: 40px;
                 align-items: center;
             }
 
@@ -3467,6 +3468,71 @@
             object-fit: cover;
         }
 
+        .cf-step-video-container {
+            position: relative;
+            width: 100%;
+            max-width: 380px;
+            margin: 0 auto;
+            padding: 10px;
+        }
+
+        .cf-step-video-container video {
+            width: 100%;
+            border-radius: 24px;
+            display: block;
+        }
+
+        @media (min-width: 768px) {
+            .cf-step-video-container {
+                max-width: 420px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .cf-step-video-container {
+                max-width: 450px;
+            }
+        }
+
+        .cf-step-video-play-btn {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 70px;
+            height: 70px;
+            background: rgba(255, 255, 255, 0.95);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            z-index: 10;
+        }
+
+        .cf-step-video-play-btn:hover {
+            transform: translate(-50%, -50%) scale(1.1);
+            background: var(--white);
+        }
+
+        .cf-step-video-play-btn i {
+            font-size: 28px;
+            color: var(--primary);
+            margin-left: 4px;
+        }
+
+        .cf-step-video-play-btn.playing {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .cf-step-video-container:hover .cf-step-video-play-btn.playing {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
         .cf-step-text {
             order: 2;
         }
@@ -5235,7 +5301,7 @@
         "logo": "https://albaniandentalclinic.com/images/landing/sanmarco-logo-icon.png",
         "image": "https://albaniandentalclinic.com/images/landing/clinica-san-marco.jpg",
         "telephone": "+355-69-XXX-XXXX",
-        "email": "info@albaniandentalclinic.com",
+        "email": "contact@sanmarcodental.fr",
         "address": {
             "@type": "PostalAddress",
             "streetAddress": "Tirana",
@@ -5274,7 +5340,7 @@
         ],
         "sameAs": [
             "https://www.facebook.com/albaniandentalclinic",
-            "https://www.instagram.com/albaniandentalclinic"
+            "https://www.instagram.com/sanmarcodental"
         ]
     }
     </script>
@@ -5282,7 +5348,7 @@
 <body>
 
 <!-- Trust Bar - Horizontal Scroll -->
-<div class="trust-bar">
+<div class="trust-bar" style="display: none;">
     <div class="trust-bar-scroll">
         <!-- First set -->
         <a href="#reviews" class="trust-bar-item">
@@ -5554,10 +5620,6 @@
                 </div>
             </div>
             <div class="hero-clinic-overlay">
-                <div class="hero-clinic-badge">
-                    <i class="fas fa-check-circle"></i>
-                    Zweryfikowany Partner
-                </div>
                 <h3 class="hero-clinic-name">San Marco Dental Clinic</h3>
                 <p class="hero-clinic-cta"><i class="fas fa-images"></i> Odkryj klinikę</p>
             </div>
@@ -5570,7 +5632,7 @@
     <div class="container">
         <h2 class="section-title">Przejrzysty Cennik</h2>
         <span class="label" style="display: block; text-align: center; color: #718096; font-size: 0.9rem; margin-bottom: 8px;">Oficjalny cennik San Marco Dental</span>
-        <h3 style="text-align: center; font-size: 1.8rem; font-weight: 700; color: #1a202c; margin-bottom: 16px;">Cennik Usług Stomatologicznych w Albanii 2025</h3>
+        <h3 style="text-align: center; font-size: 1.8rem; font-weight: 700; color: #1a202c; margin-bottom: 16px;">Cennik Usług Stomatologicznych w Albanii 2026</h3>
         <p style="text-align: center; color: #718096; max-width: 800px; margin: 0 auto 24px; line-height: 1.6;">Skontaktuj się z nami, aby otrzymać dokładną wycenę. Pamiętaj, że ceny w Albanii są niższe, a jakość ta sama. Używamy wysokiej jakości cyrkoni i najlepszych implantów dentystycznych, w tym Straumann, Megagen, JD Implants i wielu innych.</p>
         <p class="section-subtitle">Kliknij, aby zobaczyć wszystkie opcje</p>
 
@@ -5817,7 +5879,14 @@
         <div class="cf-step-container">
             <div class="cf-step-content">
                 <div class="cf-step-image">
-                    <img src="../images/instagram.images/ig_image_6_1_20251125.jpg" alt="Request free quote" loading="lazy">
+                    <div class="cf-step-video-container">
+                        <video id="step01Video" poster="../images/instagram.videos/eng_video_2.jpg" preload="metadata" playsinline webkit-playsinline>
+                            <source src="../images/instagram.videos/eng_video_2.mp4" type="video/mp4">
+                        </video>
+                        <div class="cf-step-video-play-btn" onclick="toggleStepVideo('step01Video', this)">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="cf-step-text">
                     <div class="cf-step-number"><span>01</span> Pierwszy Krok</div>
@@ -5843,7 +5912,14 @@
         <div class="cf-step-container">
             <div class="cf-step-content">
                 <div class="cf-step-image">
-                    <img src="../images/landing.images.smarco/carousel-sanmarco-3.jpg" alt="Organizzazione viaggio" loading="lazy">
+                    <div class="cf-step-video-container">
+                        <video id="step02Video" poster="../images/instagram.videos/eng_video_3.jpg" preload="metadata" playsinline webkit-playsinline>
+                            <source src="../images/instagram.videos/eng_video_3.mp4" type="video/mp4">
+                        </video>
+                        <div class="cf-step-video-play-btn" onclick="toggleStepVideo('step02Video', this)">
+                            <i class="fas fa-play"></i>
+                        </div>
+                    </div>
                 </div>
                 <div class="cf-step-text">
                     <div class="cf-step-number"><span>02</span> Drugi Krok</div>
@@ -5997,89 +6073,7 @@
     </div>
 
     <!-- Zabieg Phases with Videos -->
-    <div class="cf-phases">
-        <div class="cf-phases-header">
-            <h2>Fazy <span>Leczenia</span></h2>
-            <p>Zobacz jak pracujemy: jakość, precyzja i troska o pacjenta</p>
-        </div>
-
-        <div class="cf-phases-grid">
-            <!-- Phase 1 -->
-            <div class="cf-phase-card">
-                <div class="cf-phase-video">
-                    <video id="phaseVideo1" poster="../images/instagram.videos/eng_video_2.jpg" preload="auto" playsinline webkit-playsinline>
-                        <source src="../images/instagram.videos/eng_video_2.mp4" type="video/mp4">
-                    </video>
-                    <div class="cf-phase-video-play" onclick="toggleVideoPlay('phaseVideo1', this)">
-                        <i class="fas fa-play"></i>
-                    </div>
-                    <div class="video-controls" id="controls-phaseVideo1">
-                        <button class="video-control-btn play-pause-btn" onclick="toggleVideoPlay('phaseVideo1')">
-                            <i class="fas fa-pause"></i>
-                        </button>
-                        <button class="video-control-btn mute-btn" onclick="toggleVideoMute('phaseVideo1')">
-                            <i class="fas fa-volume-up"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="cf-phase-content">
-                    <div class="cf-phase-number">1</div>
-                    <h3>Diagnostyka i Planowanie</h3>
-                    <p>Tomografia 3D, skanowanie cyfrowe i planowanie komputerowe dla precyzyjnego i przewidywalnego rezultatu.</p>
-                </div>
-            </div>
-
-            <!-- Phase 2 -->
-            <div class="cf-phase-card">
-                <div class="cf-phase-video">
-                    <video id="phaseVideo2" poster="../images/instagram.videos/eng_video_3.jpg" preload="auto" playsinline webkit-playsinline>
-                        <source src="../images/instagram.videos/eng_video_3.mp4" type="video/mp4">
-                    </video>
-                    <div class="cf-phase-video-play" onclick="toggleVideoPlay('phaseVideo2', this)">
-                        <i class="fas fa-play"></i>
-                    </div>
-                    <div class="video-controls" id="controls-phaseVideo2">
-                        <button class="video-control-btn play-pause-btn" onclick="toggleVideoPlay('phaseVideo2')">
-                            <i class="fas fa-pause"></i>
-                        </button>
-                        <button class="video-control-btn mute-btn" onclick="toggleVideoMute('phaseVideo2')">
-                            <i class="fas fa-volume-up"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="cf-phase-content">
-                    <div class="cf-phase-number">2</div>
-                    <h3>Zabieg Chirurgiczny</h3>
-                    <p>Założenie implantów technikami minimalnie inwazyjnymi i sedacją dla maksymalnego komfortu.</p>
-                </div>
-            </div>
-
-            <!-- Phase 3 -->
-            <div class="cf-phase-card">
-                <div class="cf-phase-video">
-                    <video id="phaseVideo3" poster="../images/instagram.videos/eng_video_1.jpg" preload="auto" playsinline webkit-playsinline>
-                        <source src="../images/instagram.videos/eng_video_1.mp4" type="video/mp4">
-                    </video>
-                    <div class="cf-phase-video-play" onclick="toggleVideoPlay('phaseVideo3', this)">
-                        <i class="fas fa-play"></i>
-                    </div>
-                    <div class="video-controls" id="controls-phaseVideo3">
-                        <button class="video-control-btn play-pause-btn" onclick="toggleVideoPlay('phaseVideo3')">
-                            <i class="fas fa-pause"></i>
-                        </button>
-                        <button class="video-control-btn mute-btn" onclick="toggleVideoMute('phaseVideo3')">
-                            <i class="fas fa-volume-up"></i>
-                        </button>
-                    </div>
-                </div>
-                <div class="cf-phase-content">
-                    <div class="cf-phase-number">3</div>
-                    <h3>Ostateczna Proteza</h3>
-                    <p>Korony i protezy cyrkonowe wykonane na zamówienie dla naturalnego i trwałego uśmiechu.</p>
-                </div>
-            </div>
-        </div>
-    </div>
+    <!-- Treatment Phases removed - videos moved to Steps 01 and 02 -->
 
     <!-- Final CTA -->
     <div class="cf-final-cta">
@@ -6105,7 +6099,7 @@
         <!-- Header with Google Branding -->
         <div class="reviews-header">
             <div class="reviews-brand">
-                <a href="https://www.youtube.com/@clinicadentalealbania" target="_blank" class="reviews-clinic-logo-link">
+                <a href="https://www.youtube.com/@sanmarcodental" target="_blank" class="reviews-clinic-logo-link">
                     <div class="reviews-clinic-logo youtube-logo">
                         <i class="fab fa-youtube"></i>
                     </div>
@@ -6371,14 +6365,14 @@
         <!-- Logo & Social -->
         <div class="footer-column footer-brand">
             <div class="footer-logo-box">
-                <span class="footer-logo-cda">San Marco</span>
-                <span class="footer-logo-sub">DENTAL CLINIC</span>
+                <img src="../images/sanmarco-logo.jpg" alt="San Marco Dental" style="height: 60px; width: 60px; object-fit: contain; border-radius: 8px;">
+                <span class="footer-logo-sub">SAN MARCO DENTAL</span>
             </div>
             <p class="footer-tagline">Certyfikowana Klinika Dentystyczna</p>
             <div class="footer-follow">
                 <span>Obserwuj Nas</span>
                 <div class="footer-social-icons">
-                    <a href="https://www.instagram.com/dental.clinic.albania/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/sanmarcodental/" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
                     <a href="https://www.facebook.com/profile.php?id=61582986368461" target="_blank" rel="noopener"><i class="fab fa-facebook-f"></i></a>
                     <a href="https://www.youtube.com/channel/UCVJIQrLD9U0TVT_HLnVUMwg" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
                 </div>
@@ -6422,7 +6416,7 @@
                 </li>
                 <li>
                     <i class="fas fa-envelope"></i>
-                    <a href="mailto:info@albaniandentalclinic.com">info@albaniandentalclinic.com</a>
+                    <a href="mailto:contact@sanmarcodental.fr">contact@sanmarcodental.fr</a>
                 </li>
                 <li>
                     <i class="fas fa-map-marker-alt"></i>
@@ -6434,7 +6428,7 @@
 
     <!-- Copyright -->
     <div class="footer-bottom">
-        <p>&copy; 2025 San Marco Dental. Wszelkie prawa zastrzeżone.</p>
+        <p>&copy; 2026 San Marco Dental. Wszelkie prawa zastrzeżone.</p>
         <div class="footer-legal-links">
             <a href="privacy-policy.html">Polityka prywatności</a>
             <span>|</span>
@@ -6735,6 +6729,44 @@ document.addEventListener('DOMContentLoaded', initHeroCarousel);
 // ========================================
 // COME FUNZIONA VIDEO PLAYER WITH CONTROLS
 // ========================================
+function toggleStepVideo(videoId, playBtn) {
+    const video = document.getElementById(videoId);
+    if (!video) return;
+
+    if (video.paused) {
+        // Pause all other videos first
+        document.querySelectorAll('video').forEach(v => {
+            if (v.id !== videoId && !v.paused) {
+                v.pause();
+                const btn = v.parentElement.querySelector('.cf-step-video-play-btn, .cf-video-play-btn, .cf-phase-video-play');
+                if (btn) {
+                    btn.classList.remove('playing');
+                    btn.querySelector('i').className = 'fas fa-play';
+                }
+            }
+        });
+
+        video.play();
+        if (playBtn) {
+            playBtn.classList.add('playing');
+            playBtn.querySelector('i').className = 'fas fa-pause';
+        }
+    } else {
+        video.pause();
+        if (playBtn) {
+            playBtn.classList.remove('playing');
+            playBtn.querySelector('i').className = 'fas fa-play';
+        }
+    }
+
+    video.onended = function() {
+        if (playBtn) {
+            playBtn.classList.remove('playing');
+            playBtn.querySelector('i').className = 'fas fa-play';
+        }
+    };
+}
+
 function toggleVideoPlay(videoId, initialPlayBtn) {
     const video = document.getElementById(videoId);
     const controls = document.getElementById('controls-' + videoId);
@@ -9768,7 +9800,7 @@ function generatePDF() {
     doc.setTextColor(255, 255, 255);
     doc.setFontSize(20);
     doc.setFont('helvetica', 'bold');
-    doc.text('ALBANIAN DENTAL CLINIC', 105, 18, { align: 'center' });
+    doc.text('SAN MARCO DENTAL', 105, 18, { align: 'center' });
 
     doc.setFontSize(14);
     doc.setFont('helvetica', 'normal');
@@ -9886,7 +9918,7 @@ function generatePDF() {
     doc.text(`Dokument wygenerowany ${today} - Wylacznie w celach informacyjnych`, 105, yPos + 5, { align: 'center' });
 
     // Save PDF
-    const fileName = `ADC_Wycena_${new Date().toISOString().split('T')[0]}.pdf`;
+    const fileName = `SanMarco_Wycena_${new Date().toISOString().split('T')[0]}.pdf`;
     doc.save(fileName);
 
     // GA4 Tracking - PDF Generated (conversion event)
@@ -11231,7 +11263,7 @@ console.log('✅ Flight Search initialized');
                         </div>
                         <div class="bank-detail">
                             <span class="detail-label">Tytuł Przelewu:</span>
-                            <span class="detail-value highlight" id="bank-reference">Rezerwacja ADC - [TWOJE IMIĘ]</span>
+                            <span class="detail-value highlight" id="bank-reference">Rezerwacja San Marco - [TWOJE IMIĘ]</span>
                         </div>
                     </div>
 
@@ -12867,7 +12899,7 @@ function generateBookingId() {
     const year = date.getFullYear().toString().slice(-2);
     const month = (date.getMonth() + 1).toString().padStart(2, '0');
     const random = Math.random().toString(36).substring(2, 8).toUpperCase();
-    return `ADC-${year}${month}-${random}`;
+    return `SMD-${year}${month}-${random}`;
 }
 
 // Generate invoice number
@@ -12895,8 +12927,8 @@ function generatePaymentReference(bookingId, customerName) {
 
 // Generate Stripe statement descriptor (max 22 chars, appears on card statement)
 function getStripeStatementDescriptor(bookingId) {
-    // Format: "ADC DENTAL [ID]" - what customer sees on their credit card statement
-    return `ADC DENTAL ${bookingId.slice(-8)}`;
+    // Format: "SAN MARCO [ID]" - what customer sees on their credit card statement
+    return `SAN MARCO ${bookingId.slice(-8)}`;
 }
 
 // ========================================
@@ -15145,7 +15177,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 <a href="https://wa.me/37254450188" target="_blank" class="support-contact-btn whatsapp" onclick="trackTiranaWhatsApp()">
                     <i class="fab fa-whatsapp"></i> Napisz na WhatsApp
                 </a>
-                <a href="tel:+37254450188" class="support-contact-btn phone" onclick="trackTiranaTelefon()">
+                <a href="tel:+37254450188" class="support-contact-btn phone" onclick="trackTiranaPhone()">
                     <i class="fas fa-phone"></i> Zadzwoń Teraz
                 </a>
             </div>
@@ -15190,7 +15222,7 @@ document.addEventListener('DOMContentLoaded', function() {
                    target="_blank"
                    class="support-contact-btn whatsapp"
                    onclick="trackTiranaItinerary()">
-                    <i class="fab fa-whatsapp"></i> Wyślij Plan do Zespołu ADC
+                    <i class="fab fa-whatsapp"></i> Wyślij Plan do Zespołu San Marco
                 </a>
             </div>
         </div>
@@ -15223,7 +15255,7 @@ function openTiranaModal() {
     if (typeof fbq === 'function') {
         fbq('track', 'ViewContent', {
             content_name: 'Tirana Experience',
-            content_category: 'Krok 4 - Tourism'
+            content_category: 'Krok 4 - Turystyka'
         });
     }
 
@@ -15339,7 +15371,7 @@ function openTripAdvisor(query) {
     }
 }
 
-function openGoogleRecenzje(query) {
+function openGoogleReviews(query) {
     const url = `https://www.google.com/search?q=${encodeURIComponent(query + ' reviews')}`;
     window.open(url, '_blank');
 
@@ -15375,7 +15407,7 @@ function addToTrip(name, type, btn) {
     if (typeof gtag === 'function') {
         gtag('event', 'element_click', {
             'event_category': 'Tirana Experience',
-            'event_label': existingIndex >= 0 ? 'Remove od Trip' : 'Add to Trip',
+            'event_label': existingIndex >= 0 ? 'Usuń z Planu' : 'Add to Trip',
             'place_name': name,
             'place_type': type
         });
@@ -15461,12 +15493,12 @@ function trackTiranaWhatsApp() {
     if (typeof fbq === 'function') {
         fbq('track', 'Contact', {
             content_name: 'Tirana Support',
-            content_category: 'Krok 4 - Tourism'
+            content_category: 'Krok 4 - Turystyka'
         });
     }
 }
 
-function trackTiranaTelefon() {
+function trackTiranaPhone() {
     if (typeof gtag === 'function') {
         gtag('event', 'click_phone', {
             'event_category': 'Tirana Experience',
@@ -15511,7 +15543,7 @@ function trackTiranaItinerary() {
     if (typeof fbq === 'function') {
         fbq('track', 'Lead', {
             content_name: 'Itinerary Request',
-            content_category: 'Krok 4 - Tourism'
+            content_category: 'Krok 4 - Turystyka'
         });
     }
 }
