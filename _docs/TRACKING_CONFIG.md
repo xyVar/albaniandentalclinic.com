@@ -31,8 +31,8 @@
 ## Meta Pixel
 - **Pixel ID:** 1140066248291201
 - **CAPI (Server-side):** Direct Graph API + Zapier webhook (dual tracking)
-- **Zapier Webhook:** `https://hooks.zapier.com/hooks/catch/24843962/uz6apko/`
-- **CAPI Access Token:** Configured in `sendMetaCAPI()` function
+- **Zapier Webhook:** Configured in `_config/secrets.js` (gitignored)
+- **CAPI Access Token:** Configured in `_config/secrets.js` (gitignored)
 
 ## CRM
 - **Endpoint:** https://crm.clinicadentalealbania.it/api/v1/leads/import

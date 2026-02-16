@@ -41,6 +41,9 @@
     <meta name="twitter:description" content="Certified dental clinic in Albania. Save up to 75% on dental implants. Direct flights from London, Manchester, Edinburgh. Free consultation." />
     <meta name="twitter:image" content="https://albaniandentalclinic.com/images/sanmarco-logo.jpg" />
 
+    <!-- Tracking Config (gitignored) -->
+    <script src="_config/secrets.js"></script>
+
     <!-- Consent Mode v2 - Initialize FIRST -->
     <script>
     window.dataLayer = window.dataLayer || [];
@@ -8444,7 +8447,7 @@ document.getElementById('lead-form').addEventListener('submit', async function(e
             value: 1
         };
 
-        fetch('https://hooks.zapier.com/hooks/catch/24843962/uz6apko/', {
+        fetch(SMD_ZAPIER_WEBHOOK || '', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(capiPayload)
@@ -13367,8 +13370,8 @@ async function sendPartialLeadToCRM() {
 // META CAPI - Server-side Conversions API
 // ========================================
 async function sendMetaCAPI(eventData) {
-    const PIXEL_ID = '1140066248291201';
-    const ACCESS_TOKEN = 'EAALp5IHZAlIkBP0fMzrisRb45N9D4sAZCYPITH21IfGxYbQ1v30IlfsLeCeysWaAGswOZB4idHzRZA90k9BpvQyz5FrstjZBYRDeSdWGZCTQmxGAj2OvO9ZBH97Jhdqv1wW8kZBqTy3BZAglBHU4ZB3gBZAhyyZBdI5C63SwgMBZAOk9kGRmPsfQoJv5q1hLYfzxMmQZDZD';
+    const PIXEL_ID = SMD_META_PIXEL_ID || '1140066248291201';
+    const ACCESS_TOKEN = SMD_META_CAPI_TOKEN || '';
 
     // Generate event_id for deduplication with browser pixel
     const eventId = 'smd_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
