@@ -5,8 +5,7 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**",
-      "_docs/**",
-      "_config/**"
+      "_docs/**"
     ],
     "headers": [
       {
