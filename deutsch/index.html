@@ -53,12 +53,12 @@
     </script>
 
     <!-- Google tag (gtag.js) - GA4 + Google Ads -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-74JG2X3NB8"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GT-WRDQC73Q"></script>
     <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-74JG2X3NB8', {
+    gtag('config', 'GT-WRDQC73Q', {
         'send_page_view': true,
         'allow_google_signals': true,
         'allow_ad_personalization_signals': true,
@@ -8087,6 +8087,34 @@ document.getElementById('lead-form').addEventListener('submit', async function(e
         console.log('✅ Meta Lead event fired');
     }
 
+
+    // 3.5 Send to Meta CAPI via Zapier webhook (server-side tracking)
+    try {
+        const capiPayload = {
+            event_time: Math.floor(Date.now() / 1000),
+            event_id: 'lead_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9),
+            event_source_url: window.location.href,
+            email: formData.email || '',
+            phone: formData.phone || '',
+            first_name: formData.first_name || '',
+            last_name: formData.last_name || '',
+            city: formData.city || '',
+            country: 'EU',
+            external_id: formData.email || formData.phone || '',
+            content_name: formData.treatment || 'Dental Quote',
+            currency: 'EUR',
+            value: 1
+        };
+
+        fetch('https://hooks.zapier.com/hooks/catch/24843962/uz6apko/', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(capiPayload)
+        }).then(r => console.log('Meta CAPI webhook sent'))
+          .catch(e => console.log('Meta CAPI webhook error:', e));
+    } catch (capiError) {
+        console.log('Meta CAPI error:', capiError);
+    }
     // 4. Push to dataLayer
     window.dataLayer = window.dataLayer || [];
     window.dataLayer.push({

@@ -45,11 +45,11 @@ const sections = {
         `,
         images: [
             { src: 'images/chi-siamo/missione-01-team.jpg', caption: 'The San Marco Dental Clinic team' },
-            { src: '_assets/instagram-images/ig_image_6_1_20251125.jpg', caption: 'Our dentists at work' },
-            { src: '_assets/instagram-images/ig_image_6_3_20251125.jpg', caption: 'Reception and consultation' },
-            { src: '_assets/instagram-images/ig_image_6_7_20251125.jpg', caption: 'Our clinic' },
-            { src: '_assets/instagram-images/ig_image_6_8_20251125.jpg', caption: 'Modern operating rooms' },
-            { src: '_assets/instagram-images/ig_image_6_9_20251125.jpg', caption: 'Quality treatments' },
+            { src: 'images/instagram.images/ig_image_6_1_20251125.jpg', caption: 'Our dentists at work' },
+            { src: 'images/instagram.images/ig_image_6_3_20251125.jpg', caption: 'Reception and consultation' },
+            { src: 'images/instagram.images/ig_image_6_7_20251125.jpg', caption: 'Our clinic' },
+            { src: 'images/instagram.images/ig_image_6_8_20251125.jpg', caption: 'Modern operating rooms' },
+            { src: 'images/instagram.images/ig_image_6_9_20251125.jpg', caption: 'Quality treatments' },
             { src: 'images/chi-siamo/missione-05-clinica-moderna.png', caption: 'Advanced technology' }
         ],
         keyPoints: [
@@ -82,8 +82,8 @@ const sections = {
             <p>Detailed quotes, no hidden costs, no surprises. You will know exactly what you will pay before you travel.</p>
         `,
         images: [
-            { src: '_assets/instagram-images/ig_image_6_1_20251125.jpg', caption: 'Our dentists at work' },
-            { src: '_assets/instagram-images/ig_image_6_3_20251125.jpg', caption: 'Personalized consultation' },
+            { src: 'images/instagram.images/ig_image_6_1_20251125.jpg', caption: 'Our dentists at work' },
+            { src: 'images/instagram.images/ig_image_6_3_20251125.jpg', caption: 'Personalized consultation' },
             { src: 'images/chi-siamo/ruolo-02-negoziazione.jpg', caption: 'Negotiating with clinics' },
             { src: 'images/chi-siamo/ruolo-03-qualita.png', caption: 'Quality control' },
             { src: 'images/chi-siamo/ruolo-04-supporto.JPG', caption: 'Dedicated support' },
@@ -125,11 +125,11 @@ const sections = {
             <p>We systematically collect patient reviews to ensure continuous quality improvement.</p>
         `,
         images: [
-            { src: '_assets/instagram-images/ig_image_5_20251202.jpg', caption: 'The truth no one tells you' },
-            { src: '_assets/instagram-images/ig_image_4_20251203.jpg', caption: 'Guaranteed 75% savings' },
-            { src: '_assets/instagram-images/ig_image_6_10_20251125.jpg', caption: 'Real patient results' },
-            { src: '_assets/instagram-images/ig_image_12_20251013.jpg', caption: 'Verified reviews' },
-            { src: '_assets/instagram-images/ig_image_7_20251120.jpg', caption: 'Transfer service included' }
+            { src: 'images/instagram.images/ig_image_5_20251202.jpg', caption: 'The truth no one tells you' },
+            { src: 'images/instagram.images/ig_image_4_20251203.jpg', caption: 'Guaranteed 75% savings' },
+            { src: 'images/instagram.images/ig_image_6_10_20251125.jpg', caption: 'Real patient results' },
+            { src: 'images/instagram.images/ig_image_12_20251013.jpg', caption: 'Verified reviews' },
+            { src: 'images/instagram.images/ig_image_7_20251120.jpg', caption: 'Transfer service included' }
         ],
         keyPoints: [
             { icon: 'fa-certificate', title: 'Certified Clinics', desc: 'Only verified facilities' },

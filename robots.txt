@@ -1,0 +1,25 @@
+# San Marco Dental - albaniandentalclinic.com
+# Robots.txt
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://albaniandentalclinic.com/sitemap.xml
+
+# Disallow admin/config directories
+Disallow: /_config/
+Disallow: /_docs/
+
+# Allow all major crawlers
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
