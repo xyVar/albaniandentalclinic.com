@@ -3533,35 +3533,14 @@
             margin-top: 20px;
         }
 
-        .cf-video-container {
-            position: relative;
-            width: 100%;
-            aspect-ratio: 9 / 16;
-            max-height: 450px;
-            overflow: hidden;
-            border-radius: var(--radius-lg);
-            background: #000;
-            margin: 0 auto;
-        }
-
-        .cf-video-container video {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: var(--radius-lg);
-        }
-
-        @media (min-width: 992px) {
-            .cf-video-container {
-                max-height: 500px;
-            }
-        }
-
-        @media (min-width: 1200px) {
-            .cf-video-container {
-                max-height: 550px;
-            }
-        }
+        .cf-video-container { position: relative; width: 100%; max-width: 320px; aspect-ratio: 9 / 16; overflow: hidden; border-radius: 24px; background: #000; margin: 0 auto; box-shadow: 0 15px 40px rgba(0,0,0,0.25); }
+        .cf-video-container video { width: 100%; height: 100%; object-fit: cover; border-radius: 24px; }
+        @media (min-width: 992px) { .cf-video-container { max-width: 360px; } }
+        @media (min-width: 1200px) { .cf-video-container { max-width: 400px; } }
+        .cf-video-subtitle { position: absolute; bottom: 60px; left: 50%; transform: translateX(-50%); width: 90%; text-align: center; z-index: 15; pointer-events: none; opacity: 0; transition: opacity 0.3s ease; }
+        .cf-video-subtitle.visible { opacity: 1; }
+        .cf-video-subtitle span { display: inline; background: rgba(26, 54, 93, 0.92); color: #fff; font-weight: 700; font-size: 0.85rem; line-height: 1.8; padding: 4px 12px; border-radius: 6px; box-decoration-break: clone; -webkit-box-decoration-break: clone; }
+        @media (min-width: 768px) { .cf-video-subtitle span { font-size: 0.95rem; padding: 5px 14px; } }
 
         .cf-video-play-btn {
             position: absolute;
@@ -4017,6 +3996,22 @@
             transform: translateY(-2px);
         }
 
+        /* Carousel Styles */
+        .step-carousel-wrapper { position: relative; width: 100%; border-radius: 20px; overflow: hidden; aspect-ratio: 4/3; background: #f0f0f0; }
+        .step-carousel-track { display: flex; transition: transform 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94); height: 100%; }
+        .step-carousel-slide { min-width: 100%; height: 100%; }
+        .step-carousel-slide img { width: 100%; height: 100%; object-fit: cover; }
+        .step-carousel-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 40px; height: 40px; border-radius: 50%; background: rgba(255,255,255,0.9); border: none; cursor: pointer; display: flex; align-items: center; justify-content: center; font-size: 14px; color: var(--dark); box-shadow: 0 2px 8px rgba(0,0,0,0.15); transition: all 0.3s ease; z-index: 2; }
+        .step-carousel-nav:hover { background: var(--white); box-shadow: 0 4px 12px rgba(0,0,0,0.2); transform: translateY(-50%) scale(1.1); }
+        .step-carousel-prev { left: 12px; } .step-carousel-next { right: 12px; }
+        .step-carousel-dots { position: absolute; bottom: 12px; left: 50%; transform: translateX(-50%); display: flex; gap: 6px; z-index: 2; }
+        .step-carousel-dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(255,255,255,0.5); border: none; cursor: pointer; transition: all 0.3s ease; padding: 0; }
+        .step-carousel-dot.active { background: var(--white); transform: scale(1.3); }
+        .step-carousel-counter { position: absolute; top: 12px; right: 12px; background: rgba(0,0,0,0.5); color: white; padding: 4px 10px; border-radius: 20px; font-size: 0.75rem; font-weight: 600; z-index: 2; }
+        .cf-step-amenities { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-top: 16px; }
+        .cf-step-amenity { display: flex; align-items: center; gap: 8px; font-size: 0.85rem; color: var(--text-light); }
+        .cf-step-amenity i { color: var(--primary); font-size: 0.9rem; width: 16px; text-align: center; }
+
         /* ========================================
            MOBILE OPTIMIZATION - Premium Layout
            ======================================== */
@@ -4309,6 +4304,12 @@
             .cf-video-container {
                 max-height: 320px;
             }
+
+            /* Mobile Carousel Styles */
+            .step-carousel-wrapper { aspect-ratio: 3/2; border-radius: 16px; }
+            .step-carousel-nav { width: 34px; height: 34px; font-size: 12px; }
+            .step-carousel-prev { left: 8px; } .step-carousel-next { right: 8px; }
+            .cf-step-amenities { grid-template-columns: 1fr; }
         }
 
         /* Cómo funciona Pasos Desktop Styles */
@@ -5616,16 +5617,6 @@
         <!-- Desktop Menu -->
         <ul class="navbar-menu">
             <li><a href="#" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">Inicio</a></li>
-            <li class="navbar-dropdown">
-                <a href="chi-siamo.html">Sobre nosotros</a>
-                <div class="dropdown-menu">
-                    <a href="chi-siamo.html#missione">Nuestra misión</a>
-                    <a href="chi-siamo.html#ruolo">Nuestro papel</a>
-                    <a href="chi-siamo.html#tutela">Protección del paciente</a>
-                    <a href="chi-siamo.html#prezzi">Lowest Precios</a>
-                    <a href="chi-siamo.html#esperienza">Tu experiencia</a>
-                </div>
-            </li>
             <li><a href="#pricing">Precios</a></li>
             <li class="navbar-dropdown">
                 <a href="#pricing">Tratamientos</a>
@@ -5677,14 +5668,6 @@
             <li><a href="#pricing" onclick="closeMobileMenu()">Precios</a></li>
             <li><a href="#come-funziona" onclick="closeMobileMenu()">Cómo funciona</a></li>
             <li><a href="#reviews" onclick="closeMobileMenu()">Testimonios</a></li>
-        </ul>
-        <div class="menu-section-title">Sobre nosotros</div>
-        <ul>
-            <li><a href="chi-siamo.html#missione" onclick="closeMobileMenu()">Nuestra misión</a></li>
-            <li><a href="chi-siamo.html#ruolo" onclick="closeMobileMenu()">Nuestro papel</a></li>
-            <li><a href="chi-siamo.html#tutela" onclick="closeMobileMenu()">Protección del paciente</a></li>
-            <li><a href="chi-siamo.html#prezzi" onclick="closeMobileMenu()">Lowest Precios</a></li>
-            <li><a href="chi-siamo.html#esperienza" onclick="closeMobileMenu()">Tu experiencia</a></li>
         </ul>
         <div class="menu-section-title">Tratamientos</div>
         <ul>
@@ -6091,9 +6074,10 @@
 
             <div class="cf-video-card">
                 <div class="cf-video-container">
-                    <video id="cfHeroVideo" poster="../images/sanmarco9.PNG" preload="metadata" data-start-time="11">
-                        <source src="../images/instagram.videos/eng_video_1.mp4#t=11" type="video/mp4">
+                    <video id="cfHeroVideo" poster="../images/sanmarco9.PNG" preload="metadata" playsinline>
+                        <source src="../video/estella-london.mp4" type="video/mp4">
                     </video>
+                    <div class="cf-video-subtitle" id="heroSubtitle"><span></span></div>
                     <div class="cf-video-play-btn" onclick="toggleVideoPlay('cfHeroVideo', this)">
                         <i class="fas fa-play"></i>
                     </div>
@@ -6161,47 +6145,86 @@
         </div>
     </div>
 
-    <!-- Paso 03 -->
+    <!-- Paso 03 - Alojamiento -->
     <div class="cf-step">
         <div class="cf-step-container">
             <div class="cf-step-content">
                 <div class="cf-step-image">
-                    <img src="../images/tour/Tirana_28.jpg" alt="Transfer aeroporto Tirana" loading="lazy">
+                    <div class="step-carousel-wrapper" id="apartmentCarousel">
+                        <div class="step-carousel-track" id="apartmentTrack">
+                            <div class="step-carousel-slide"><img src="../images/apartment/apartment-mountain-view.jpg" alt="Dormitorio con vista panorámica a las montañas" loading="lazy"></div>
+                            <div class="step-carousel-slide"><img src="../images/apartment/apartment-twin-modern.jpg" alt="Habitación doble moderna con vista al horizonte" loading="lazy"></div>
+                            <div class="step-carousel-slide"><img src="../images/apartment/apartment-double-elegant.jpg" alt="Habitación elegante con muebles de diseño" loading="lazy"></div>
+                            <div class="step-carousel-slide"><img src="../images/apartment/apartment-twin-teal.jpg" alt="Amplia habitación doble con decoración contemporánea" loading="lazy"></div>
+                            <div class="step-carousel-slide"><img src="../images/apartment/apartment-smart-tv.jpg" alt="Smart TV con apps de streaming y zona de trabajo" loading="lazy"></div>
+                            <div class="step-carousel-slide"><img src="../images/apartment/apartment-twin-teal-2.jpg" alt="Cómoda habitación doble con arte moderno" loading="lazy"></div>
+                            <div class="step-carousel-slide"><img src="../images/apartment/apartment-large-balcony.jpg" alt="Gran dormitorio con balcón y vistas a la ciudad" loading="lazy"></div>
+                            <div class="step-carousel-slide"><img src="../images/apartment/apartment-bathroom-marble.jpg" alt="Baño de lujo con acabados en mármol" loading="lazy"></div>
+                            <div class="step-carousel-slide"><img src="../images/apartment/apartment-bathroom-modern.jpg" alt="Baño moderno con ducha a ras de suelo" loading="lazy"></div>
+                            <div class="step-carousel-slide"><img src="../images/apartment/apartment-bathroom-grey.jpg" alt="Baño contemporáneo con toallero calefactado" loading="lazy"></div>
+                        </div>
+                        <button class="step-carousel-nav step-carousel-prev" onclick="moveAptCarousel(-1)"><i class="fas fa-chevron-left"></i></button>
+                        <button class="step-carousel-nav step-carousel-next" onclick="moveAptCarousel(1)"><i class="fas fa-chevron-right"></i></button>
+                        <div class="step-carousel-counter"><span id="aptSlideNum">1</span> / 10</div>
+                        <div class="step-carousel-dots" id="apartmentDots"></div>
+                    </div>
                 </div>
                 <div class="cf-step-text">
                     <div class="cf-step-number"><span>03</span> Tercer Paso</div>
-                    <h2>Del Aeropuerto a la Clínica: <span>Traslado Gratuito</span></h2>
-                    <p class="cf-step-description">Al llegar al aeropuerto de Tirana, nuestro conductor te estará esperando para llevarte cómodamente a la clínica o tu alojamiento. Servicio completamente gratuito.</p>
+                    <h2>Su <span>Alojamiento</span> a pasos de la clínica</h2>
+                    <p class="cf-step-description">Alójese en un apartamento moderno totalmente equipado a solo 5 minutos a pie de San Marco Dental. Ubicado en el centro de Tirana con vistas panorámicas a las montañas, tendrá todo lo necesario para una recuperación cómoda.</p>
                     <ul class="cf-step-features">
-                        <li><i class="fas fa-check"></i> Conductor dedicado en el aeropuerto de Tirana</li>
-                        <li><i class="fas fa-check"></i> Traslado de ida y vuelta gratuito</li>
-                        <li><i class="fas fa-check"></i> Vehículos cómodos con aire acondicionado</li>
-                        <li><i class="fas fa-check"></i> Traslados incluidos durante tu estancia</li>
+                        <li><i class="fas fa-check"></i> Apartamentos modernos, a 5 minutos de la clínica</li>
+                        <li><i class="fas fa-check"></i> Vistas panorámicas a Tirana y las montañas del Dajti</li>
+                        <li><i class="fas fa-check"></i> Traslado gratuito al aeropuerto incluido</li>
+                        <li><i class="fas fa-check"></i> Todos los traslados durante el tratamiento cubiertos</li>
                     </ul>
+                    <div class="cf-step-amenities">
+                        <div class="cf-step-amenity"><i class="fas fa-wifi"></i> Wi-Fi Gratuito</div>
+                        <div class="cf-step-amenity"><i class="fas fa-tv"></i> Smart TV & Streaming</div>
+                        <div class="cf-step-amenity"><i class="fas fa-coffee"></i> Cafés y Restaurantes cerca</div>
+                        <div class="cf-step-amenity"><i class="fas fa-shopping-bag"></i> Tiendas a 5 min</div>
+                        <div class="cf-step-amenity"><i class="fas fa-prescription-bottle-alt"></i> Farmacia cercana</div>
+                        <div class="cf-step-amenity"><i class="fas fa-bath"></i> Baño privado</div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Paso 04 -->
+    <!-- Paso 04 - Explorar Tirana -->
     <div class="cf-step">
         <div class="cf-step-container">
             <div class="cf-step-content">
                 <div class="cf-step-image">
-                    <img src="../images/tour/la-splendida-cupola-ingresso.jpg" alt="Alloggio confortevole Tirana" loading="lazy">
+                    <div class="step-carousel-wrapper" id="tiranaCarousel">
+                        <div class="step-carousel-track" id="tiranaTrack">
+                            <div class="step-carousel-slide"><img src="../images/tirana/skanderbeg-square-night.jpg" alt="Plaza Skanderbeg y Hotel InterContinental de noche" loading="lazy"></div>
+                            <div class="step-carousel-slide"><img src="../images/tirana/dajti-cable-car.jpg" alt="Teleférico del Monte Dajti con vistas panorámicas" loading="lazy"></div>
+                            <div class="step-carousel-slide"><img src="../images/tirana/pyramid-tirana.jpg" alt="La Pirámide de Tirana - monumento emblemático" loading="lazy"></div>
+                            <div class="step-carousel-slide"><img src="../images/tirana/blloku-cafes.jpg" alt="Barrio Blloku - cafés y restaurantes de moda" loading="lazy"></div>
+                            <div class="step-carousel-slide"><img src="../images/tirana/bunkart-dome-exterior.jpg" alt="Cúpula del BunkArt y Torre del Reloj al atardecer" loading="lazy"></div>
+                            <div class="step-carousel-slide"><img src="../images/tirana/bunkart-interior.jpg" alt="BunkArt - impresionante cúpula dorada interior" loading="lazy"></div>
+                            <div class="step-carousel-slide"><img src="../images/tirana/house-of-leaves.jpg" alt="Casa de las Hojas - museo histórico en Tirana" loading="lazy"></div>
+                        </div>
+                        <button class="step-carousel-nav step-carousel-prev" onclick="moveTiranaCarousel(-1)"><i class="fas fa-chevron-left"></i></button>
+                        <button class="step-carousel-nav step-carousel-next" onclick="moveTiranaCarousel(1)"><i class="fas fa-chevron-right"></i></button>
+                        <div class="step-carousel-counter"><span id="tiranaSlideNum">1</span> / 7</div>
+                        <div class="step-carousel-dots" id="tiranaDots"></div>
+                    </div>
                 </div>
                 <div class="cf-step-text">
                     <div class="cf-step-number"><span>04</span> Cuarto Paso</div>
-                    <h2>Estancia <span>Cómoda</span> en Tirana</h2>
-                    <p class="cf-step-description">Te ayudamos a encontrar el alojamiento perfecto cerca de la clínica. Hoteles de 4 estrellas, apartamentos modernos o acogedores B&Bs: elige la solución ideal para ti.</p>
+                    <h2>Explore <span>Tirana</span> entre sus citas</h2>
+                    <p class="cf-step-description">Aproveche sus días libres con nuestras sugerencias de tours. Ahorre tiempo y dinero — le recomendamos los mejores lugares según su programa de tratamiento, todos fácilmente accesibles.</p>
                     <ul class="cf-step-features">
-                        <li><i class="fas fa-check"></i> Hoteles asociados con tarifas especiales</li>
-                        <li><i class="fas fa-check"></i> Instalaciones cerca de la clínica</li>
-                        <li><i class="fas fa-check"></i> Asistencia en reservas</li>
-                        <li><i class="fas fa-check"></i> Tirana: ciudad segura y acogedora</li>
+                        <li><i class="fas fa-check"></i> Plaza Skanderbeg y vibrante centro de la ciudad</li>
+                        <li><i class="fas fa-check"></i> Teleférico del Monte Dajti con vistas panorámicas</li>
+                        <li><i class="fas fa-check"></i> Museo BunkArt y cafés del barrio Blloku</li>
+                        <li><i class="fas fa-check"></i> Traslados gratuitos a las atracciones</li>
                     </ul>
                     <button class="cf-overview-btn cf-overview-btn-tirana" onclick="openTiranaModal()" style="margin-top: 20px;">
-                        <i class="fas fa-calculator"></i> Planifica Tu Itinerario
+                        <i class="fas fa-map-marked-alt"></i> Sugerencias de Tours y Precios
                     </button>
                 </div>
             </div>
@@ -6668,7 +6691,6 @@
                 <li><a href="#come-funziona">Cómo funciona</a></li>
                 <li><a href="#" onclick="openProductModal('impianti'); return false;">Precios</a></li>
                 <li><a href="#" onclick="openProductModal('impianti'); return false;">Implantes dentales</a></li>
-                <li><a href="#">Sobre nosotros</a></li>
             </ul>
         </div>
 
@@ -6686,7 +6708,7 @@
                 </li>
                 <li>
                     <i class="fas fa-map-marker-alt"></i>
-                    <span>Tirana, Albania</span>
+                    <span>Rruga e Dibrës, Kompleksi Arlis, Kati 1<br>Tirana, Albania</span>
                 </li>
             </ul>
         </div>
@@ -15787,6 +15809,146 @@ document.getElementById('tirana-overlay').addEventListener('click', function(e) 
 });
 
 console.log('✅ Tirana Experience Modal initialized');
+
+// ========================================
+// CAROUSEL FUNCTIONS
+// ========================================
+
+// Apartment Carousel
+let aptCurrentSlide = 0;
+const aptTotalSlides = 10;
+
+function initAptCarousel() {
+    const dotsContainer = document.getElementById('apartmentDots');
+    if (!dotsContainer) return;
+
+    for (let i = 0; i < aptTotalSlides; i++) {
+        const dot = document.createElement('button');
+        dot.classList.add('step-carousel-dot');
+        if (i === 0) dot.classList.add('active');
+        dot.onclick = () => goToAptSlide(i);
+        dotsContainer.appendChild(dot);
+    }
+}
+
+function moveAptCarousel(direction) {
+    aptCurrentSlide += direction;
+    if (aptCurrentSlide < 0) aptCurrentSlide = aptTotalSlides - 1;
+    if (aptCurrentSlide >= aptTotalSlides) aptCurrentSlide = 0;
+    updateAptCarousel();
+}
+
+function goToAptSlide(index) {
+    aptCurrentSlide = index;
+    updateAptCarousel();
+}
+
+function updateAptCarousel() {
+    const track = document.getElementById('apartmentTrack');
+    const slideNum = document.getElementById('aptSlideNum');
+    const dots = document.querySelectorAll('#apartmentDots .step-carousel-dot');
+
+    if (track) track.style.transform = `translateX(-${aptCurrentSlide * 100}%)`;
+    if (slideNum) slideNum.textContent = aptCurrentSlide + 1;
+    dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === aptCurrentSlide);
+    });
+}
+
+// Tirana Carousel
+let tiranaCurrentSlide = 0;
+const tiranaTotalSlides = 7;
+
+function initTiranaCarousel() {
+    const dotsContainer = document.getElementById('tiranaDots');
+    if (!dotsContainer) return;
+
+    for (let i = 0; i < tiranaTotalSlides; i++) {
+        const dot = document.createElement('button');
+        dot.classList.add('step-carousel-dot');
+        if (i === 0) dot.classList.add('active');
+        dot.onclick = () => goToTiranaSlide(i);
+        dotsContainer.appendChild(dot);
+    }
+}
+
+function moveTiranaCarousel(direction) {
+    tiranaCurrentSlide += direction;
+    if (tiranaCurrentSlide < 0) tiranaCurrentSlide = tiranaTotalSlides - 1;
+    if (tiranaCurrentSlide >= tiranaTotalSlides) tiranaCurrentSlide = 0;
+    updateTiranaCarousel();
+}
+
+function goToTiranaSlide(index) {
+    tiranaCurrentSlide = index;
+    updateTiranaCarousel();
+}
+
+function updateTiranaCarousel() {
+    const track = document.getElementById('tiranaTrack');
+    const slideNum = document.getElementById('tiranaSlideNum');
+    const dots = document.querySelectorAll('#tiranaDots .step-carousel-dot');
+
+    if (track) track.style.transform = `translateX(-${tiranaCurrentSlide * 100}%)`;
+    if (slideNum) slideNum.textContent = tiranaCurrentSlide + 1;
+    dots.forEach((dot, i) => {
+        dot.classList.toggle('active', i === tiranaCurrentSlide);
+    });
+}
+
+// ========================================
+// VIDEO SUBTITLE FUNCTION
+// ========================================
+
+const esteraSubtitles = [
+    { start: 3.9, end: 7.0, text: "Mi nombre es Estera. Vivo en Londres" },
+    { start: 7.0, end: 10.0, text: "y tengo 21 años." },
+    { start: 10.0, end: 13.5, text: "Me dieron una consulta gratuita el primer día." },
+    { start: 13.5, end: 19.0, text: "Composite bonding y blanqueamiento — completamente gratis." },
+    { start: 19.0, end: 23.0, text: "Todo fue explicado perfectamente. Me sentí muy cómoda." },
+    { start: 23.0, end: 27.0, text: "Me sentí muy segura aquí. Todos son tan amables." },
+    { start: 27.0, end: 31.5, text: "Todo el procedimiento fue muy fácil." },
+    { start: 31.5, end: 39.0, text: "Primera vez en San Marco. Es un país muy seguro." },
+    { start: 39.0, end: 50.0, text: "La gente aquí también habla inglés." },
+    { start: 50.0, end: 54.0, text: "Esta es una zona segura y amigable." },
+    { start: 54.0, end: 66.0, text: "Recomiendo San Marco Clinic al 100% a todos." }
+];
+
+function initSubtitles() {
+    const video = document.getElementById('cfHeroVideo');
+    const subtitleDiv = document.getElementById('heroSubtitle');
+    const subtitleSpan = subtitleDiv ? subtitleDiv.querySelector('span') : null;
+
+    if (!video || !subtitleDiv || !subtitleSpan) return;
+
+    video.addEventListener('timeupdate', function() {
+        const currentTime = video.currentTime;
+        const currentSubtitle = esteraSubtitles.find(sub => currentTime >= sub.start && currentTime < sub.end);
+
+        if (currentSubtitle) {
+            subtitleSpan.textContent = currentSubtitle.text;
+            subtitleDiv.classList.add('visible');
+        } else {
+            subtitleDiv.classList.remove('visible');
+        }
+    });
+
+    video.addEventListener('pause', function() {
+        subtitleDiv.classList.remove('visible');
+    });
+
+    video.addEventListener('ended', function() {
+        subtitleDiv.classList.remove('visible');
+    });
+}
+
+// Initialize all on page load
+document.addEventListener('DOMContentLoaded', function() {
+    initAptCarousel();
+    initTiranaCarousel();
+    initSubtitles();
+});
+
 </script>
 
 <!-- Cookie banner removed per user request -->
